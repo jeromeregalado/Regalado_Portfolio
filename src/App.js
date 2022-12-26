@@ -3,6 +3,7 @@ import React from 'react';
 import { Carousel, Nav, Navbar, Container, Offcanvas, Button, Accordion, Figure, Form} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
 function App() 
 {
   return (
@@ -21,6 +22,7 @@ function App()
       </Container>
     </Navbar>
 
+
       <body className="mainpage">
 
       <Carousel>
@@ -36,7 +38,7 @@ function App()
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images2.alphacoders.com/990/990967.jpg"
+          src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-6/277534964_3266710853616189_6306238281240243095_n.png?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGXaWypP2We13xKwNxqxG9NLChJW7TfOaQsKElbtN85pIHW6-i_Fx0hgpUDdMwVhUsFhekD8hISouzOKbWtqGWY&_nc_ohc=Ir6k2hiAj0sAX_xIUka&tn=GGCMv0Zi2rdcdMW5&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfDFdt34EpQq82XdIqEaPdymVNuwrBEfOpYsSnghhyuONw&oe=63ADBE44"
           alt="Second slide"
         />
 
@@ -60,14 +62,14 @@ function App()
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-      </Carousel>
+  </Carousel>
 
       <h1 className="navBarCenterText">About Me</h1>
 
     <Accordion defaultActiveKey="0">
 
       <Accordion.Item eventKey="0">
-        <Accordion.Header>My Current Programming Language Skills</Accordion.Header>
+        <Accordion.Header>My Current Programming Language Skillset</Accordion.Header>
         <Accordion.Body>
           <p align="center">    
           <Figure>
