@@ -37,29 +37,47 @@
   }
 }
 
-.mainpage
-{
-  background-color: maroon;
-}
-
 .description-main
 {
   text-align: left;
 }
 
-.carousel-item
+img
 {
-  height:32rem;
-  background:#777;
-  color:white;
-  position:relative;
+  min-height: 40vh;
+  max-height: 80vh;
+  object-fit: fill;
 }
 
-.container
+.black-color-text
 {
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  padding-bottom: 0;
+  color:black;
+  text-align: right;
+}
+
+.Hello
+{
+  position: absolute;
+  margin: 0;
+  color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xxx-large;
+}
+
+.Hello1
+{
+  position: absolute;
+  margin: 0;
+  color: black;
+  left: 50%;
+  top: 50%;
+  font-size: xxx-large;
+  transform: translate(-50%, 110%);
+}
+
+.navBarCenterText
+{
+  text-align: center;
 }
