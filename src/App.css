@@ -44,8 +44,8 @@
 
 img
 {
-  min-height: 40vh;
-  max-height: 80vh;
+  min-height: 60vh;
+  max-height: 60vh;
   object-fit: fill;
 }
 
@@ -79,5 +79,18 @@ img
 
 .navBarCenterText
 {
+  padding: 2rem 0;
   text-align: center;
 }
+
+.progIcons
+{
+  max-height: 1rem;
+  max-width: 300px;
+}
+
+  .nav-links:hover 
+  {
+  background-color:blue; /*will change background-color of element on hover */
+  color: white; /*will change color of text within the element on hover */
+  }
