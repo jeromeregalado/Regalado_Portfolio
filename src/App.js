@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Carousel, Nav, Navbar, Container, Offcanvas, Button, Accordion, Figure} from 'react-bootstrap';
+import { Carousel, Nav, Navbar, Container, Offcanvas, Button, Accordion, Figure, Form} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() 
@@ -14,13 +14,15 @@ function App()
           <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
-                  <Nav.Link className="nav-links" href="#action2">About Me</Nav.Link>
-                  <Nav.Link className="nav-links" href="#action4">Contact Me</Nav.Link>
+                  <Nav.Link className="nav-links" href="#action1">About Me</Nav.Link>
+                  <Nav.Link className="nav-links" href="#action2">Contact Me</Nav.Link>
                 </Nav>
           </Offcanvas.Body>
       </Container>
     </Navbar>
+
       <body className="mainpage">
+
       <Carousel>
         <Carousel.Item>
         <img
@@ -61,7 +63,9 @@ function App()
       </Carousel>
 
       <h1 className="navBarCenterText">About Me</h1>
-      <Accordion defaultActiveKey="0">
+
+    <Accordion defaultActiveKey="0">
+
       <Accordion.Item eventKey="0">
         <Accordion.Header>My Current Programming Language Skills</Accordion.Header>
         <Accordion.Body>
@@ -117,6 +121,7 @@ function App()
         </p>
         </Accordion.Body>
       </Accordion.Item>
+
       <Accordion.Item eventKey="1">
         <Accordion.Header>My Educational Background</Accordion.Header>
         <Accordion.Body>
@@ -127,8 +132,56 @@ function App()
           </ul>
         </Accordion.Body>
       </Accordion.Item>
+
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>My Other Traits</Accordion.Header>
+        <Accordion.Body>
+          <ul>
+          <li><h3>Very Fluent in English</h3><p>I can speak and write in English proficiently</p></li>
+          <li><h3>Team Oriented, but can also work solo if needed</h3><p>I love having company in doing anything</p></li>
+          <li><h3>Easily adaptable</h3><p>Adaptable in environments and athmospheres</p></li>
+          </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+
     </Accordion>
     <h1 className="navBarCenterText">Contact Me</h1>
+    <Accordion>
+      <Accordion.Item eventKey="0">
+      <Accordion.Header>Open Form</Accordion.Header>
+      <Accordion.Body>
+      <Form>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                I'll never share your email with anyone else.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Phone Number</Form.Label>
+              <Form.Control type="number" placeholder="Enter phone number" />
+              <Form.Text className="text-muted">
+                Don't worry, I'll never share your number with anyone else either.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formQuestion">
+              <Form.Label>Question</Form.Label>
+              <Form.Control type="text" placeholder="Your Question for me" />
+              <Form.Text className="text-muted">
+                It can be anything, ranging from "How are you today", to anything political I guess LOL.
+              </Form.Text>
+            </Form.Group>
+
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+    </Form>
+      </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
       </body>
     </div>
   );
