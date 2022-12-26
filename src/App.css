@@ -46,3 +46,20 @@
 {
   text-align: left;
 }
+
+.carousel-item
+{
+  height:32rem;
+  background:#777;
+  color:white;
+  position:relative;
+}
+
+.container
+{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding-bottom: 0;
+}
