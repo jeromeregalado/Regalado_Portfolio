@@ -1,11 +1,17 @@
 import './App.css';
 import React from 'react';
-import { Carousel, Nav, Navbar, Container, Offcanvas, Button, Accordion, Figure, Form} from 'react-bootstrap';
+import { Carousel, Nav, Navbar, Container, Offcanvas, Button, Accordion, Figure, Form, ProgressBar, Alert,} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function App() 
 {
+  const nowCSS = 70;
+  const nowJava = 80;
+  const nowSpringBoot = 70;
+  const nowCPlusPlus = 70;
+  const nowReact = 60;
+  const nowBootstrap = 60;
   return (
     <div className="App">
         <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
@@ -136,6 +142,30 @@ function App()
               </Accordion.Item>
 
               <Accordion.Item eventKey="1">
+                <Accordion.Header>My Gauge in my skillset</Accordion.Header>
+                <Accordion.Body>
+                  <p className='AsOfDate'>As of <span className='EMPHASISDATE'>December 28, 2022</span></p>
+                  <span className='gaugeTitle'>CSS</span>
+                  <ProgressBar striped animated variant="info" now={nowCSS} label={`${nowCSS}%`}/>
+
+                  <span className='gaugeTitle'>Java</span>
+                  <ProgressBar striped animated variant="info" now={nowJava} label={`${nowJava}%`}/>
+
+                  <span className='gaugeTitle'>Spring Boot</span>
+                  <ProgressBar striped animated variant="info" now={nowSpringBoot} label={`${nowSpringBoot}%`}/>
+
+                  <span className='gaugeTitle'>C++</span>
+                  <ProgressBar striped animated variant="info" now={nowCPlusPlus} label={`${nowCPlusPlus}%`}/>
+
+                  <span className='gaugeTitle'>React</span>
+                  <ProgressBar striped animated variant="info" now={nowReact} label={`${nowReact}%`}/>
+
+                  <span className='gaugeTitle'>Bootstrap</span>
+                  <ProgressBar striped animated variant="info" now={nowBootstrap} label={`${nowBootstrap}%`}/>
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="2">
                 <Accordion.Header>My Educational Background</Accordion.Header>
                 <Accordion.Body>
                   <ul>
@@ -146,7 +176,7 @@ function App()
                 </Accordion.Body>
               </Accordion.Item>
 
-              <Accordion.Item eventKey="2">
+              <Accordion.Item eventKey="3">
                 <Accordion.Header>My Other Traits</Accordion.Header>
                 <Accordion.Body>
                   <ul>
@@ -167,7 +197,7 @@ function App()
               <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" />
+                      <Form.Control type="email" placeholder="Enter email" required/>
                       <Form.Text className="text-muted">
                         I'll never share your email with anyone else.
                       </Form.Text>
@@ -175,7 +205,7 @@ function App()
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Phone Number</Form.Label>
-                      <Form.Control type="number" placeholder="Enter phone number" />
+                      <Form.Control type="number" placeholder="Enter phone number" required/>
                       <Form.Text className="text-muted">
                         Don't worry, I'll never share your number with anyone else either.
                       </Form.Text>
@@ -183,10 +213,16 @@ function App()
 
                     <Form.Group className="mb-3" controlId="formQuestion">
                       <Form.Label>Question</Form.Label>
-                      <Form.Control type="text" placeholder="Your Question for me" />
+                      <Form.Control type="text" placeholder="Your Question for me" required/>
                       <Form.Text className="text-muted">
                         It can be anything, ranging from "How are you today", to anything political I guess LOL.
                       </Form.Text>
+                      <Alert variant="primary">
+                      <Alert.Heading>Just a quick reminder!</Alert.Heading>
+                      <p>
+                        Just don't be a weirdo XD LMAO
+                      </p>
+                      </Alert>
                     </Form.Group>
 
                     <Button variant="primary" type="submit">

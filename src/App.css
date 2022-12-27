@@ -95,3 +95,25 @@ img
   background-color:blue; /*will change background-color of element on hover */
   color: white; /*will change color of text within the element on hover */
   }
+
+  .gaugeTitle
+  {
+    font-weight: bold;
+  }
+
+  .mainpage
+  {
+    background-color: #212121;
+    color:white
+  }
+
+  .EMPHASISDATE
+  {
+    font-weight: bolder;
+  }
+
+  .AsOfDate
+  {
+    text-align: center;
+    font-size: xx-large;
+  }
