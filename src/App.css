@@ -85,8 +85,9 @@ img
 
 .progIcons
 {
-  max-height: 1rem;
-  max-width: 300px;
+  height: 50%;
+  max-width: 50%;
+  margin:2%
 }
 
   .nav-links:hover 
