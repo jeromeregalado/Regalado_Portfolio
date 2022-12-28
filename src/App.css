@@ -117,3 +117,9 @@ img
     text-align: center;
     font-size: xx-large;
   }
+
+  .cardFormat
+  {
+    width:20rem;
+    margin: 1rem 1rem;
+  }
