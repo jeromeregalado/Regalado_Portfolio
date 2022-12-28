@@ -195,9 +195,7 @@ function App()
                         </Card.Body>
                       </Card>
                     </Col>
-                    </Row>
 
-                    <Row>
                     <Col>
                       <Card className='cardFormat'>
                         <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" />
@@ -256,7 +254,7 @@ function App()
                     </Col>
                     </Row>
                 </Container>
-                </p>
+                  </p>
                 </Accordion.Body>
               </Accordion.Item>
 
@@ -309,11 +307,7 @@ function App()
             </Accordion>
 
           <h1 className="navBarCenterText">Contact Me</h1>
-            <Accordion>
-              <Accordion.Item eventKey="0">
-              <Accordion.Header>Open Form</Accordion.Header>
-              <Accordion.Body>
-              <Form>
+              <Form className='formFormat'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email address</Form.Label>
                       <Form.Control type="email" placeholder="Enter email" required/>
@@ -344,13 +338,14 @@ function App()
                       </Alert>
                     </Form.Group>
 
-                    <Button variant="primary" type="submit">
-                      Submit
-                    </Button>
+                    <center>
+                    <div className="d-grid gap-2">
+                      <Button variant="primary" type="submit" size='lg'>
+                        Submit
+                      </Button>
+                    </div>
+                    </center>
             </Form>
-              </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
 
       </body>
     </div>

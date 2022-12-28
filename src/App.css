@@ -120,6 +120,12 @@ img
 
   .cardFormat
   {
-    width:20rem;
+    width:18rem;
     margin: 1rem 1rem;
+  }
+
+  .formFormat
+  {
+    margin: 2rem 3rem;
+    padding-bottom: 2rem;
   }
