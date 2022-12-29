@@ -78,9 +78,9 @@ function App()
               </Offcanvas.Header>
               <Offcanvas.Body>
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                      <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
-                      <Nav.Link className="nav-links" href="#AboutMe">About Me</Nav.Link>
-                      <Nav.Link className="nav-links" href="#ContactMe">Contact Me</Nav.Link>
+                      <Nav.Link className="nav-links" href="#home" spy to="Home">Home</Nav.Link>
+                      <Nav.Link className="nav-links" href="#aboutMe" spy to="aboutMe">About Me</Nav.Link>
+                      <Nav.Link className="nav-links" href="#contactMe" spy to="contactMe">Contact Me</Nav.Link>
                     </Nav>
               </Offcanvas.Body>
               </Navbar.Offcanvas>
@@ -302,7 +302,7 @@ function App()
 
   const AccordionAboutMe = () =>{
     return (
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey="0" id="aboutMe">
 
               <Accordion.Item eventKey="0">
                 <Accordion.Header>{accordionTitle1}</Accordion.Header>
@@ -344,16 +344,20 @@ function App()
 
         <body className="mainpage">
 
+          <section id="home">
             <MainCarousel/>
+          </section>
 
+          <section id="aboutMe">
             <h1 className="navBarCenterText">About Me</h1>
-
             <AccordionAboutMe/>
+          </section>
 
-          <h1 className="navBarCenterText">Contact Me</h1>
-
+          <section id="contactMe">
+            <h1 className="navBarCenterText">Contact Me</h1>
             <ContactMeForm/>
-            
+          </section>
+          
       </body>
     </div>
   );
