@@ -300,18 +300,9 @@ function App()
     );
   }
 
-  
-  return (
-    <div className="App">
-        <NavBar/>
-
-        <body className="mainpage">
-
-            <MainCarousel/>
-
-            <h1 className="navBarCenterText">About Me</h1>
-
-            <Accordion defaultActiveKey="0">
+  const AccordionAboutMe = () =>{
+    return (
+      <Accordion defaultActiveKey="0">
 
               <Accordion.Item eventKey="0">
                 <Accordion.Header>{accordionTitle1}</Accordion.Header>
@@ -342,9 +333,27 @@ function App()
               </Accordion.Item>
 
             </Accordion>
+    );
+  }
+
+  
+  return (
+    <div className="App">
+
+        <NavBar/>
+
+        <body className="mainpage">
+
+            <MainCarousel/>
+
+            <h1 className="navBarCenterText">About Me</h1>
+
+            <AccordionAboutMe/>
 
           <h1 className="navBarCenterText">Contact Me</h1>
+
             <ContactMeForm/>
+            
       </body>
     </div>
   );
