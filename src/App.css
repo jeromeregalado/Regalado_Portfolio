@@ -127,5 +127,10 @@ img
   .formFormat
   {
     margin: 2rem 3rem;
-    padding-bottom: 2rem;
+  }
+
+  .footerFormat
+  {
+    text-align: center;
+    font-weight: bold;
   }

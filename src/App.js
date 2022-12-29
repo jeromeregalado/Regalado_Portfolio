@@ -358,6 +358,7 @@ function App()
             <ContactMeForm/>
           </section>
           
+          <footer><p className="footerFormat">Jerome Regalado &#169; December 30, 2022</p></footer>
       </body>
     </div>
   );
