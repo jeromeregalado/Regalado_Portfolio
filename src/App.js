@@ -88,7 +88,7 @@ function App()
         </Navbar>
     );
   }
-<h1 className="navBarCenterText aboutMePadding">About Me</h1>
+
   const ContactMeForm = () =>{
     return(
       <Form className='formFormat'>
@@ -138,7 +138,7 @@ function App()
       <Container>
                     <Row>
                     <Col>
-                      <Card className='cardFormat'>
+                      <Card className='cardFormat textFormatForCard'>
                         <Card.Img variant="top" src="https://cdn.iconscout.com/icon/free/png-256/css-alt-3628710-3029935.png" />
                         <Card.Body>
                           <Card.Title>CSS</Card.Title>
@@ -157,7 +157,7 @@ function App()
                     </Col>
 
                     <Col>
-                      <Card className='cardFormat'>
+                      <Card className='cardFormat textFormatForCard'>
                         <Card.Img variant="top" src="https://www.developer.com/wp-content/uploads/2021/09/Java-tutorials.jpg" />
                         <Card.Body>
                           <Card.Title>Java</Card.Title>
@@ -176,7 +176,7 @@ function App()
                     </Col>
 
                     <Col>
-                      <Card className='cardFormat'>
+                      <Card className='cardFormat textFormatForCard'>
                         <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdvescVN6j2qIVm9Ym4y0boOwNLj-wlfV5j2hQXU&s"/>
                         <Card.Body>
                           <Card.Title>Spring Boot</Card.Title>
@@ -195,7 +195,7 @@ function App()
                     </Col>
 
                     <Col>
-                      <Card className='cardFormat'>
+                      <Card className='cardFormat textFormatForCard'>
                         <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" />
                         <Card.Body>
                           <Card.Title>C++</Card.Title>
@@ -214,7 +214,7 @@ function App()
                     </Col>
 
                     <Col>
-                      <Card className='cardFormat'>
+                      <Card className='cardFormat textFormatForCard'>
                         <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" />
                         <Card.Body>
                           <Card.Title>React</Card.Title>
@@ -233,7 +233,7 @@ function App()
                     </Col>
 
                     <Col>
-                      <Card className='cardFormat'>
+                      <Card className='cardFormat textFormatForCard'>
                         <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" />
                         <Card.Body>
                           <Card.Title>Bootstrap</Card.Title>
@@ -261,19 +261,19 @@ function App()
       <>
       <p className='AsOfDate'>As of <span className='EMPHASISDATE'>December 28, 2022</span></p>
       <span className='gaugeTitle'>CSS</span>
-      <ProgressBar striped animated variant="info" now={nowCSS} label={`${nowCSS}%`} />
+      <ProgressBar striped animated variant="info" now={nowCSS} label={`${nowCSS}%`} /><br/>
 
       <span className='gaugeTitle'>Java</span>
-      <ProgressBar striped animated variant="info" now={nowJava} label={`${nowJava}%`} />
+      <ProgressBar striped animated variant="info" now={nowJava} label={`${nowJava}%`} /><br/>
 
       <span className='gaugeTitle'>Spring Boot</span>
-      <ProgressBar striped animated variant="info" now={nowSpringBoot} label={`${nowSpringBoot}%`} />
+      <ProgressBar striped animated variant="info" now={nowSpringBoot} label={`${nowSpringBoot}%`} /><br/>
 
       <span className='gaugeTitle'>C++</span>
-      <ProgressBar striped animated variant="info" now={nowCPlusPlus} label={`${nowCPlusPlus}%`} />
+      <ProgressBar striped animated variant="info" now={nowCPlusPlus} label={`${nowCPlusPlus}%`} /><br/>
 
       <span className='gaugeTitle'>React</span>
-      <ProgressBar striped animated variant="info" now={nowReact} label={`${nowReact}%`} />
+      <ProgressBar striped animated variant="info" now={nowReact} label={`${nowReact}%`} /><br/>
 
       <span className='gaugeTitle'>Bootstrap</span>
       <ProgressBar striped animated variant="info" now={nowBootstrap} label={`${nowBootstrap}%`} /></>
@@ -306,35 +306,28 @@ function App()
 
               <Accordion.Item eventKey="0">
                 <Accordion.Header>{accordionTitle1}</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className='AccordionFormat'>
                 <p align="center"><SkillsetCards/></p>
                 </Accordion.Body>
               </Accordion.Item>
 
               <Accordion.Item eventKey="1">
                 <Accordion.Header>{accordionTitle2}</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className='AccordionFormat'>
                   <GaugeBars/>
                 </Accordion.Body>
               </Accordion.Item>
 
               <Accordion.Item eventKey="2">
                 <Accordion.Header>{accordionTitle3}</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className='AccordionFormat'>
                   <EducationalBackground/>
                 </Accordion.Body>
               </Accordion.Item>
 
               <Accordion.Item eventKey="3">
-                <Accordion.Header>My Other Traits</Accordion.Header>
-                <Accordion.Body className='AccordionFormat'>
-                  <ul>
-                  <li><h3>Very Fluent in English</h3><p>I can speak and write in English proficiently</p></li>
-                  <li><h3>Team Oriented, but can also work solo if needed</h3><p>I love having company in doing anything</p></li>
-                  <li><h3>Easily adaptable</h3><p>Adaptable in environments and athmospheres</p></li>
-                  </ul>
                 <Accordion.Header>{accordionTitle4}</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className='AccordionFormat'>
                   <SkillTraits/>
                 </Accordion.Body>
               </Accordion.Item>
@@ -356,7 +349,7 @@ function App()
           </section>
 
           <section id="aboutMe">
-            <h1 className="navBarCenterText">About Me</h1>
+            <h1 className="navBarCenterText aboutMePadding">About Me</h1>
             <AccordionAboutMe/>
           </section>
 
