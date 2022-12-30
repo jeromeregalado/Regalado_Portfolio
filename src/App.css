@@ -79,7 +79,7 @@ img
 
 .navBarCenterText
 {
-  padding: 2rem 0;
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -127,6 +127,23 @@ img
   .formFormat
   {
     margin: 2rem 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .AccordionFormat
+  {
+    background-color: #212121;
+    color: white;
+  }
+
+  .textFormatForCard
+  {
+    color: black;
+  }
+
+  .aboutMePadding
+  {
+    padding-bottom: 2rem;
   }
 
   .footerFormat
