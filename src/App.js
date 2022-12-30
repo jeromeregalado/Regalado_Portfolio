@@ -81,13 +81,13 @@ function App()
               </Carousel.Item>
             </Carousel>
 
-          <h1 className="navBarCenterText">About Me</h1>
+          <h1 className="navBarCenterText aboutMePadding">About Me</h1>
 
             <Accordion defaultActiveKey="0">
 
               <Accordion.Item eventKey="0">
                 <Accordion.Header>My Current Programming Language Skillset</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className='AccordionFormat'>
                   <p align="center">    
                   {/* <Figure>
                   <img className="progIcons" alt="CSSimg"
@@ -137,7 +137,7 @@ function App()
                 <p align="center"><h3>Bootstrap</h3></p>
                 </Figure.Caption>
                 </Figure> */}
-                <Container>
+                <Container className='textFormatForCard'>
                     <Row>
                     <Col>
                       <Card className='cardFormat'>
@@ -260,31 +260,31 @@ function App()
 
               <Accordion.Item eventKey="1">
                 <Accordion.Header>My Gauge in my skillset</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className='AccordionFormat'>
                   <p className='AsOfDate'>As of <span className='EMPHASISDATE'>December 28, 2022</span></p>
                   <span className='gaugeTitle'>CSS</span>
-                  <ProgressBar striped animated variant="info" now={nowCSS} label={`${nowCSS}%`}/>
+                  <ProgressBar striped animated variant="success" now={nowCSS} label={`${nowCSS}%`}/><br/>
 
                   <span className='gaugeTitle'>Java</span>
-                  <ProgressBar striped animated variant="info" now={nowJava} label={`${nowJava}%`}/>
+                  <ProgressBar striped animated variant="info" now={nowJava} label={`${nowJava}%`}/><br/>
 
                   <span className='gaugeTitle'>Spring Boot</span>
-                  <ProgressBar striped animated variant="info" now={nowSpringBoot} label={`${nowSpringBoot}%`}/>
+                  <ProgressBar striped animated variant="success" now={nowSpringBoot} label={`${nowSpringBoot}%`}/><br/>
 
                   <span className='gaugeTitle'>C++</span>
-                  <ProgressBar striped animated variant="info" now={nowCPlusPlus} label={`${nowCPlusPlus}%`}/>
+                  <ProgressBar striped animated variant="success" now={nowCPlusPlus} label={`${nowCPlusPlus}%`}/><br/>
 
                   <span className='gaugeTitle'>React</span>
-                  <ProgressBar striped animated variant="info" now={nowReact} label={`${nowReact}%`}/>
+                  <ProgressBar striped animated variant="warning" now={nowReact} label={`${nowReact}%`}/><br/>
 
                   <span className='gaugeTitle'>Bootstrap</span>
-                  <ProgressBar striped animated variant="info" now={nowBootstrap} label={`${nowBootstrap}%`}/>
+                  <ProgressBar striped animated variant="warning" now={nowBootstrap} label={`${nowBootstrap}%`}/>
                 </Accordion.Body>
               </Accordion.Item>
 
               <Accordion.Item eventKey="2">
                 <Accordion.Header>My Educational Background</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className='AccordionFormat'>
                   <ul>
                   <li><h3>Mapua University</h3><p>Batchelor of Science in Information Technology (2016-2022)</p></li>
                   <li><h3>De La Salle University</h3><p>Batchelor of Science in Civil Engineering (2014-2016)</p></li>
@@ -295,7 +295,7 @@ function App()
 
               <Accordion.Item eventKey="3">
                 <Accordion.Header>My Other Traits</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className='AccordionFormat'>
                   <ul>
                   <li><h3>Very Fluent in English</h3><p>I can speak and write in English proficiently</p></li>
                   <li><h3>Team Oriented, but can also work solo if needed</h3><p>I love having company in doing anything</p></li>
