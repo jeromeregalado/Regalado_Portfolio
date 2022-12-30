@@ -8,9 +8,9 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* .App-logo {
+  .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  } */
+  }
 }
 
 .App-header {
@@ -44,8 +44,8 @@
 
 img
 {
-  min-height: 60vh;
-  max-height: 60vh;
+  min-height: 100vh;
+  max-height: 100vh;
   object-fit: fill;
 }
 
@@ -120,7 +120,7 @@ img
 
   .cardFormat
   {
-    width:18rem;
+    width: 18rem;
     margin: 1rem 1rem;
   }
 
@@ -144,4 +144,10 @@ img
   .aboutMePadding
   {
     padding-bottom: 2rem;
+  }
+
+  .footerFormat
+  {
+    text-align: center;
+    font-weight: bold;
   }
