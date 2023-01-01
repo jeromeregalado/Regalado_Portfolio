@@ -336,6 +336,7 @@ function App()
     );
   }
 
+  const footerNotes = <footer><p className="footerFormat">Jerome Regalado &#169; 2022</p></footer>;
   
   return (
     <div className="App">
@@ -358,7 +359,7 @@ function App()
             <ContactMeForm/>
           </section>
           
-          <footer><p className="footerFormat">Jerome Regalado &#169; 2022</p></footer>
+          {footerNotes}
       </body>
     </div>
   );
