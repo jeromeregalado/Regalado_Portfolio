@@ -91,7 +91,6 @@ function App()
 
   const ContactMeForm = () =>{
     return(
-      <h1 className="navBarCenterText">Contact Me</h1>
       <Form className='formFormat'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email address</Form.Label>
@@ -108,7 +107,7 @@ function App()
                         Don't worry, I'll never share your number with anyone else either.
                       </Form.Text>
                     </Form.Group>
-                    
+
                     <Form.Group className="mb-3" controlId="formQuestion">
                       <Form.Label>Question</Form.Label>
                       <Form.Control type="text" placeholder="Your Question for me" required/>
@@ -303,7 +302,6 @@ function App()
 
   const AccordionAboutMe = () =>{
     return (
-      <h1 className="navBarCenterText aboutMePadding">About Me</h1>
       <Accordion defaultActiveKey="0" id="aboutMe">
 
               <Accordion.Item eventKey="0">
@@ -352,10 +350,12 @@ function App()
           </section>
 
           <section id="aboutMe">
+            <h1 className="navBarCenterText aboutMePadding">About Me</h1>
             <AccordionAboutMe/>
           </section>
 
           <section id="contactMe">
+            <h1 className="navBarCenterText">Contact Me</h1>
             <ContactMeForm/>
           </section>
           
