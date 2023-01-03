@@ -51,7 +51,7 @@ img
 
 .black-color-text
 {
-  color:white;
+  color:black;
   text-align: left;
 }
 
@@ -99,6 +99,7 @@ img
   .gaugeTitle
   {
     font-weight: bold;
+    text-align: center;
   }
 
   .mainpage
@@ -151,9 +152,9 @@ img
     text-align: center;
     font-weight: bold;
   }
-
+  
   .cardImg
   {
-    max-height: 50%;
-    max-width: auto;
+    height: 180px;
+    width: 500px;
   }

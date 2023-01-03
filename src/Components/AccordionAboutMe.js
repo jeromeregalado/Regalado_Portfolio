@@ -1,6 +1,13 @@
 import React from "react";
-import {Button, Accordion, ProgressBar, Card, Row, Col, Container} from 'react-bootstrap';
+import {Button, Accordion, Card, Row, Col, Container} from 'react-bootstrap';
 import { CircularProgressbar } from "react-circular-progressbar";
+import 'react-circular-progressbar/dist/styles.css';
+import CSSimg from '../Images/CSSimg.png';
+import JavaImg from '../Images/JavaImg.jpg';
+import SpringBootImg from '../Images/SpringBootImg.png';
+import ReactImg from '../Images/ReactImg.png';
+import BootstrapImg from '../Images/BootstrapImg.png';
+import CPPImg from '../Images/CPlusPlusImg.png';
 
 const nowCSS = 70;
 const nowJava = 80;
@@ -22,7 +29,7 @@ const SkillsetCards = () =>{
                     <Row>
                     <Col>
                       <Card className='cardFormat textFormatForCard'>
-                        <Card.Img variant="top" src="https://cdn.iconscout.com/icon/free/png-256/css-alt-3628710-3029935.png" className="cardImg" />
+                        <Card.Img variant="top" src={CSSimg} className="cardImg" />
                         <Card.Body>
                           <Card.Title>CSS</Card.Title>
                           <Card.Text>
@@ -41,7 +48,7 @@ const SkillsetCards = () =>{
 
                     <Col>
                       <Card className='cardFormat textFormatForCard'>
-                        <Card.Img variant="top" src="https://www.developer.com/wp-content/uploads/2021/09/Java-tutorials.jpg" />
+                        <Card.Img variant="top" src={JavaImg} className="cardImg"/>
                         <Card.Body>
                           <Card.Title>Java</Card.Title>
                           <Card.Text>
@@ -60,7 +67,7 @@ const SkillsetCards = () =>{
 
                     <Col>
                       <Card className='cardFormat textFormatForCard'>
-                        <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdvescVN6j2qIVm9Ym4y0boOwNLj-wlfV5j2hQXU&s"/>
+                        <Card.Img variant="top" src={SpringBootImg} className="cardImg"/>
                         <Card.Body>
                           <Card.Title>Spring Boot</Card.Title>
                           <Card.Text>
@@ -79,7 +86,7 @@ const SkillsetCards = () =>{
 
                     <Col>
                       <Card className='cardFormat textFormatForCard'>
-                        <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" />
+                        <Card.Img variant="top" src={CPPImg} className="cardImg"/>
                         <Card.Body>
                           <Card.Title>C++</Card.Title>
                           <Card.Text>
@@ -98,7 +105,7 @@ const SkillsetCards = () =>{
 
                     <Col>
                       <Card className='cardFormat textFormatForCard'>
-                        <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" />
+                        <Card.Img variant="top" src={ReactImg} className="cardImg"/>
                         <Card.Body>
                           <Card.Title>React</Card.Title>
                           <Card.Text>
@@ -117,7 +124,7 @@ const SkillsetCards = () =>{
 
                     <Col>
                       <Card className='cardFormat textFormatForCard'>
-                        <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" />
+                        <Card.Img variant="top" src={BootstrapImg} className="cardImg"/>
                         <Card.Body>
                           <Card.Title>Bootstrap</Card.Title>
                           <Card.Text>
@@ -143,23 +150,57 @@ const SkillsetCards = () =>{
     return(
       <div>
       <p className='AsOfDate'>As of <span className='EMPHASISDATE'>{date}</span></p>
+      <p align="center">
+      <Row>
+      <Col>
+      <div style={{ width: 200, height: 200 }}>
       <span className='gaugeTitle'>CSS</span>
-      <ProgressBar striped animated variant="info" now={nowCSS} label={`${nowCSS}%`} /><br/>
+      <CircularProgressbar value={nowCSS} text={`${nowCSS}%`} />
+      </div>
+      </Col>
 
+      <Col>
+      <div style={{ width: 200, height: 200 }}>
       <span className='gaugeTitle'>Java</span>
-      <ProgressBar striped animated variant="info" now={nowJava} label={`${nowJava}%`} /><br/>
+      <CircularProgressbar value={nowJava} text={`${nowJava}%`} />
+      </div>
+      </Col>
 
+      <Col>
+      <div style={{ width: 200, height: 200 }}>
       <span className='gaugeTitle'>Spring Boot</span>
-      <ProgressBar striped animated variant="info" now={nowSpringBoot} label={`${nowSpringBoot}%`} /><br/>
+      <CircularProgressbar value={nowSpringBoot} text={`${nowSpringBoot}%`} />
+      </div>
+      </Col>
+      </Row>
+      <br/>
+      <br/>
 
+      <Row>
+      <Col>
+      <div style={{ width: 200, height: 200 }}>
       <span className='gaugeTitle'>C++</span>
-      <ProgressBar striped animated variant="info" now={nowCPlusPlus} label={`${nowCPlusPlus}%`} /><br/>
+      <CircularProgressbar value={nowCPlusPlus} text={`${nowCPlusPlus}%`} />
+      </div>
+      </Col>
 
+      <Col>
+      <div style={{ width: 200, height: 200 }}>
       <span className='gaugeTitle'>React</span>
-      <ProgressBar striped animated variant="info" now={nowReact} label={`${nowReact}%`} /><br/>
+      <CircularProgressbar value={nowReact} text={`${nowReact}%`} />
+      </div>
+      </Col>
 
-      <span className='gaugeTitle'>Bootstrap</span>
-      <ProgressBar striped animated variant="info" now={nowBootstrap} label={`${nowBootstrap}%`} /></div>
+      <Col>
+      <div style={{ width: 200, height: 200 }}>
+        <span className='gaugeTitle'>Bootstrap</span>
+        <CircularProgressbar value={nowBootstrap} text={`${nowBootstrap}%`} />
+      </div>
+      </Col>
+      </Row>
+      <br/>
+      </p>
+      </div>
     );
   }
 
