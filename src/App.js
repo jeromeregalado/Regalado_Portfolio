@@ -107,7 +107,7 @@ function App()
                         Don't worry, I'll never share your number with anyone else either.
                       </Form.Text>
                     </Form.Group>
-
+                    
                     <Form.Group className="mb-3" controlId="formQuestion">
                       <Form.Label>Question</Form.Label>
                       <Form.Control type="text" placeholder="Your Question for me" required/>
@@ -336,7 +336,6 @@ function App()
     );
   }
 
-  const footerNotes = <footer><p className="footerFormat">Jerome Regalado &#169; 2022</p></footer>;
   
   return (
     <div className="App">
@@ -359,8 +358,8 @@ function App()
             <ContactMeForm/>
           </section>
           
-          {footerNotes}
-      </body>
+          <footer><p className="footerFormat">Jerome Regalado &#169; 2022</p></footer>
+        </body>
     </div>
   );
 }
