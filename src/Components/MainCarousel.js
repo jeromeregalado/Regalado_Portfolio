@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import softvisionImage from ".././Images/softvisionImage.png"
 
 const MainCarousel = () =>{
     return(
@@ -16,7 +17,7 @@ const MainCarousel = () =>{
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-6/277534964_3266710853616189_6306238281240243095_n.png?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGXaWypP2We13xKwNxqxG9NLChJW7TfOaQsKElbtN85pIHW6-i_Fx0hgpUDdMwVhUsFhekD8hISouzOKbWtqGWY&_nc_ohc=Ir6k2hiAj0sAX_xIUka&tn=GGCMv0Zi2rdcdMW5&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfDFdt34EpQq82XdIqEaPdymVNuwrBEfOpYsSnghhyuONw&oe=63ADBE44"
+                  src={softvisionImage}
                   alt="Second slide"
                 />
 
