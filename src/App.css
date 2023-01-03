@@ -151,3 +151,9 @@ img
     text-align: center;
     font-weight: bold;
   }
+
+  .cardImg
+  {
+    max-height: 50%;
+    max-width: auto;
+  }

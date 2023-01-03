@@ -10,10 +10,6 @@ import ContactMeForm from './Components/ContactMeForm';
 
 function App() 
 {
-
-
-
-  
   return (
     <div className="App">
 
@@ -34,7 +30,7 @@ function App()
             <h1 className="navBarCenterText">Contact Me</h1>
             <ContactMeForm/>
           </section>
-          
+
           <footer><p className="footerFormat">Jerome Regalado &#169; {new Date().getFullYear()}</p></footer>
         </body>
     </div>

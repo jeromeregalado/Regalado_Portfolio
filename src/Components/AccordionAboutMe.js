@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, Accordion, ProgressBar, Card, Row, Col, Container} from 'react-bootstrap';
+import { CircularProgressbar } from "react-circular-progressbar";
 
 const nowCSS = 70;
 const nowJava = 80;
@@ -21,7 +22,7 @@ const SkillsetCards = () =>{
                     <Row>
                     <Col>
                       <Card className='cardFormat textFormatForCard'>
-                        <Card.Img variant="top" src="https://cdn.iconscout.com/icon/free/png-256/css-alt-3628710-3029935.png" />
+                        <Card.Img variant="top" src="https://cdn.iconscout.com/icon/free/png-256/css-alt-3628710-3029935.png" className="cardImg" />
                         <Card.Body>
                           <Card.Title>CSS</Card.Title>
                           <Card.Text>
@@ -140,7 +141,7 @@ const SkillsetCards = () =>{
   const GaugeBars = () => 
   {
     return(
-      <>
+      <div>
       <p className='AsOfDate'>As of <span className='EMPHASISDATE'>{date}</span></p>
       <span className='gaugeTitle'>CSS</span>
       <ProgressBar striped animated variant="info" now={nowCSS} label={`${nowCSS}%`} /><br/>
@@ -158,7 +159,7 @@ const SkillsetCards = () =>{
       <ProgressBar striped animated variant="info" now={nowReact} label={`${nowReact}%`} /><br/>
 
       <span className='gaugeTitle'>Bootstrap</span>
-      <ProgressBar striped animated variant="info" now={nowBootstrap} label={`${nowBootstrap}%`} /></>
+      <ProgressBar striped animated variant="info" now={nowBootstrap} label={`${nowBootstrap}%`} /></div>
     );
   }
 
