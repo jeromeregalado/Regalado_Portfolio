@@ -16,6 +16,8 @@ function App()
   const accordionTitle2 = "My Gauge in my skillset";
   const accordionTitle3 = "My Educational Background";
   const accordionTitle4 = "My Other Traits";
+  const current = new Date();
+  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
 
   const MainCarousel = () =>{
     return(
@@ -259,7 +261,7 @@ function App()
   {
     return(
       <>
-      <p className='AsOfDate'>As of <span className='EMPHASISDATE'>December 28, 2022</span></p>
+      <p className='AsOfDate'>As of <span className='EMPHASISDATE'>{date}</span></p>
       <span className='gaugeTitle'>CSS</span>
       <ProgressBar striped animated variant="info" now={nowCSS} label={`${nowCSS}%`} /><br/>
 
@@ -302,7 +304,7 @@ function App()
 
   const AccordionAboutMe = () =>{
     return (
-      <Accordion defaultActiveKey="0" id="aboutMe">
+      <Accordion defaultActiveKey="0">
 
               <Accordion.Item eventKey="0">
                 <Accordion.Header>{accordionTitle1}</Accordion.Header>
@@ -336,6 +338,7 @@ function App()
     );
   }
 
+
   
   return (
     <div className="App">
@@ -358,7 +361,7 @@ function App()
             <ContactMeForm/>
           </section>
           
-          <footer><p className="footerFormat">Jerome Regalado &#169; 2022</p></footer>
+          <footer><p className="footerFormat">Jerome Regalado &#169; {new Date().getFullYear()}</p></footer>
         </body>
     </div>
   );
