@@ -155,6 +155,6 @@ img
   
   .cardImg
   {
-    height: 180px;
-    width: 500px;
+    height: 1px;
+    max-width: min-content;
   }

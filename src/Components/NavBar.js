@@ -8,7 +8,7 @@ const NavBar = () => {
             <Navbar.Brand href="#home">Jerome Regalado</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-lg`}
+              id={`offcanvasNavbar-expand-sm`}
               aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
               placement="end"
             >
