@@ -7,7 +7,7 @@ const MainCarousel = () =>{
       <Carousel>
                 <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100 carouselImg"
                   src="https://images3.alphacoders.com/136/136595.jpg"
                   alt="First slide"
                 />
@@ -16,7 +16,7 @@ const MainCarousel = () =>{
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100 carouselImg"
                   src={softvisionImage}
                   alt="Second slide"
                 />
@@ -29,7 +29,7 @@ const MainCarousel = () =>{
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100 carouselImg"
                   src="https://media.tenor.com/IDFH8znFG3QAAAAC/spongebob-squarepants-spongebob.gif"
                   alt="Third slide"
                 />
