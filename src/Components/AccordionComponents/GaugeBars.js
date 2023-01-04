@@ -17,21 +17,21 @@ const GaugeBars = () =>
     <Row>
     <Col>
     <div style={{ width: 225, height: 225 }}>
-    <p className='gaugeTitle mb-3'>CSS</p>
+    <p className='gaugeTitle'>CSS</p>
     <CircularProgressbar value={nowCSS} text={`${nowCSS}%`} />
     </div>
     </Col>
 
     <Col>
     <div style={{ width: 225, height: 225 }}>
-    <p className='gaugeTitle mb-3'>Java</p>
+    <p className='gaugeTitle'>Java</p>
     <CircularProgressbar value={nowJava} text={`${nowJava}%`} />
     </div>
     </Col>
 
     <Col>
     <div style={{ width: 225, height: 225 }}>
-    <p className='gaugeTitle mb-3'>Spring Boot</p>
+    <p className='gaugeTitle'>Spring Boot</p>
     <CircularProgressbar value={nowSpringBoot} text={`${nowSpringBoot}%`} />
     </div>
     </Col>

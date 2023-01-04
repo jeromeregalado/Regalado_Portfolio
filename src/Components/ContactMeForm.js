@@ -5,10 +5,10 @@ const ContactMeForm = () =>{
     return(
       <div className="section paddingForContact">
       <h1 className="navBarCenterText">Contact Me</h1>
-      <Form className='formFormat'>
+      <Form className='formFormat' action="https://getform.io/f/325d8b9e-e78e-42ec-afae-6e9ab3501a67" method="POST">
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" required/>
+                      <Form.Control type="email" placeholder="Enter email" name="E-Mail" required/>
                       <Form.Text className="text-muted">
                         I'll never share your email with anyone else.
                       </Form.Text>
@@ -16,7 +16,7 @@ const ContactMeForm = () =>{
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Phone Number</Form.Label>
-                      <Form.Control type="number" placeholder="Enter phone number" required/>
+                      <Form.Control type="number" placeholder="Enter phone number" name="Number" required/>
                       <Form.Text className="text-muted">
                         Don't worry, I'll never share your number with anyone else either.
                       </Form.Text>
@@ -24,7 +24,7 @@ const ContactMeForm = () =>{
                     
                     <Form.Group className="mb-3" controlId="formQuestion">
                       <Form.Label>Question</Form.Label>
-                      <Form.Control type="text" placeholder="Your Question for me" required/>
+                      <Form.Control type="text" placeholder="Your Question for me" name="Question" required/>
                       <Form.Text className="text-muted">
                         It can be anything, ranging from "How are you today", to anything political I guess LOL.
                       </Form.Text>
