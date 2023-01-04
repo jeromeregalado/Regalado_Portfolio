@@ -11,12 +11,12 @@ const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear
 
 const SkillsetCards = () =>{
     const CardInfo =[
-        {image:CSSimg, title: "CSS", text: "XD"},
-        {image:JavaImg, title: "Java", text: "Random Text"},
-        {image:SpringBootImg, title: "Spring Boot", text: "Random Text"},
-        {image:CPPimg, title: "C++", text: "Random Text"},
-        {image:ReactImg, title: "React", text: "Random Text"},
-        {image:BootstrapImg, title: "Bootstrap", text: "Random Text"}
+        {image:CSSimg, title: "CSS"},
+        {image:JavaImg, title: "Java"},
+        {image:SpringBootImg, title: "Spring Boot"},
+        {image:CPPimg, title: "C++"},
+        {image:ReactImg, title: "React"},
+        {image:BootstrapImg, title: "Bootstrap"}
     ]
     
     const renderCard = (card, index) => {
@@ -25,7 +25,6 @@ const SkillsetCards = () =>{
                <Card.Img variant="top" src={card.image} className="cardImg m-auto"/>
                     <Card.Body>
                     <Card.Title>{card.title}</Card.Title>
-                    <Card.Text>{card.text}</Card.Text>
                     </Card.Body>
             </Card>
         );
