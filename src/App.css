@@ -197,3 +197,8 @@
   min-height: 100vh;
   max-height: 100vh;
 }
+
+.paddingforGaugeTitle
+{
+  padding-top: 70px;
+}

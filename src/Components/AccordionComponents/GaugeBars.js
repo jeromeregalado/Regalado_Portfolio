@@ -1,5 +1,5 @@
 import React from "react";
-import { CircularProgressbar} from "react-circular-progressbar";
+import { CircularProgressbarWithChildren} from "react-circular-progressbar";
 import { Row, Col } from "react-bootstrap";
 
 const nowCSS = 70;
@@ -17,22 +17,19 @@ const GaugeBars = () =>
     <Row>
     <Col>
     <div style={{ width: 200, height: 200,}}>
-    <p className='gaugeTitle'>CSS</p>
-    <CircularProgressbar value={nowCSS} text={`${nowCSS}%`} />
+    <CircularProgressbarWithChildren value={nowCSS} text={`${nowCSS}%`}><p className="paddingforGaugeTitle gaugeTitle">CSS</p></CircularProgressbarWithChildren>
     </div>
     </Col>
 
     <Col>
     <div style={{ width: 200, height: 200,}}>
-    <p className='gaugeTitle'>Java</p>
-    <CircularProgressbar value={nowJava} text={`${nowJava}%`} />
+    <CircularProgressbarWithChildren value={nowJava} text={`${nowJava}%`}><p className="paddingforGaugeTitle gaugeTitle">Java</p></CircularProgressbarWithChildren>
     </div>
     </Col>
 
     <Col>
     <div style={{ width: 200, height: 200,}}>
-    <p className='gaugeTitle'>Spring Boot</p>
-    <CircularProgressbar value={nowSpringBoot} text={`${nowSpringBoot}%`} />
+    <CircularProgressbarWithChildren value={nowSpringBoot} text={`${nowSpringBoot}%`}><p className="paddingforGaugeTitle gaugeTitle">Spring Boot</p></CircularProgressbarWithChildren>
     </div>
     </Col>
     </Row>
@@ -40,22 +37,19 @@ const GaugeBars = () =>
     <Row>
     <Col>
     <div style={{ width: 200, height: 200,}}>
-    <p className='gaugeTitle'>C++</p>
-    <CircularProgressbar value={nowCPlusPlus} text={`${nowCPlusPlus}%`} />
+    <CircularProgressbarWithChildren value={nowCPlusPlus} text={`${nowCPlusPlus}%`}><p className="paddingforGaugeTitle gaugeTitle">C++</p></CircularProgressbarWithChildren>
     </div>
     </Col>
 
     <Col>
     <div style={{ width: 200, height: 200,}}>
-    <p className='gaugeTitle'>React</p>
-    <CircularProgressbar value={nowReact} text={`${nowReact}%`} />
+    <CircularProgressbarWithChildren value={nowReact} text={`${nowReact}%`}><p className="paddingforGaugeTitle gaugeTitle">React</p></CircularProgressbarWithChildren>
     </div>
     </Col>
 
     <Col>
     <div style={{ width: 200, height: 200,}}>
-      <p className='gaugeTitle'>Bootstrap</p>
-      <CircularProgressbar value={nowBootstrap} text={`${nowBootstrap}%`} />
+      <CircularProgressbarWithChildren value={nowBootstrap} text={`${nowBootstrap}%`}><p className="paddingforGaugeTitle gaugeTitle">Bootstrap</p></CircularProgressbarWithChildren>
     </div>
     </Col>
     </Row>

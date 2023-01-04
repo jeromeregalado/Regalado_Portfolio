@@ -6,13 +6,10 @@ import NavBar from './Components/NavBar';
 import AccordionAboutMe from './Components/AccordionAboutMe';
 import ContactMeForm from './Components/ContactMeForm';
 
-
-
 function App() 
 {
   return (
     <div className="App">
-      
 
         <NavBar/>
 
