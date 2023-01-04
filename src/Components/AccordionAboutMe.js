@@ -2,7 +2,6 @@ import React from "react";
 import {Accordion} from 'react-bootstrap';
 import 'react-circular-progressbar/dist/styles.css';
 import SkillsetCards from "./AccordionComponents/SkillsetCards";
-import GaugeBars from "./AccordionComponents/GaugeBars";
 const accordionTitle1 = "My Current Programming Language Skillset";
 // const accordionTitle2 = "My Gauge in my skillset";
 const accordionTitle3 = "My Educational Background";
@@ -37,7 +36,7 @@ const accordionTitle4 = "My Other Traits";
               <Accordion.Item eventKey="0">
                 <Accordion.Header>{accordionTitle1}</Accordion.Header>
                 <Accordion.Body className='AccordionFormat'>
-                <p align="center"><SkillsetCards/><GaugeBars/></p>
+                <p align="center"><SkillsetCards/></p>
                 </Accordion.Body>
               </Accordion.Item>
 

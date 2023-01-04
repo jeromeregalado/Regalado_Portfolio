@@ -202,3 +202,9 @@
 {
   padding-top: 70px;
 }
+
+.gaugeStyle
+{
+  height: 200;
+  width: 200;
+}
