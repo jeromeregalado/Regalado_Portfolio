@@ -172,7 +172,7 @@
 }
 
 .grid > div {
-  flex-basis: calc(33% - 40px);
+  flex-basis: calc(9% - 40px);
 }
 
 .paddingForContact
