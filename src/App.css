@@ -162,7 +162,7 @@ img
 
   section
   {
-    min-height: max-content;
+    min-height: 100vh;
   }
 
 .box {
@@ -178,4 +178,9 @@ img
 
 .grid > div {
   flex-basis: calc(33% - 40px);
+}
+
+.paddingForContact
+{
+  padding-top: 5%;
 }

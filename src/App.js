@@ -28,7 +28,6 @@ function App()
           </section>
 
           <section id="contactMe">
-            <h1 className="navBarCenterText">Contact Me</h1>
             <ContactMeForm/>
           </section>
 

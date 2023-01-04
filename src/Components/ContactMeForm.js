@@ -3,6 +3,8 @@ import {Button, Form, Alert} from 'react-bootstrap';
 
 const ContactMeForm = () =>{
     return(
+      <div className="section paddingForContact">
+      <h1 className="navBarCenterText">Contact Me</h1>
       <Form className='formFormat'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email address</Form.Label>
@@ -42,6 +44,7 @@ const ContactMeForm = () =>{
                     </div>
                     </center>
             </Form>
+            </div>
     );
   }
 
