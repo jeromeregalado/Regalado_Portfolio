@@ -20,7 +20,7 @@ const SkillsetCards = () =>{
     const renderCard = (card, index) => {
         return(
             <Card key={index} className='cardFormat textFormatForCard box'>
-               <Card.Img variant="top" src={card.image} className="cardImg center"/>
+               <img variant="top" src={card.image} className="cardImg m-auto"/>
                     <Card.Body>
                     <Card.Title>{card.title}</Card.Title>
                     <Card.Text>{card.text}</Card.Text>

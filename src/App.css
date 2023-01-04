@@ -114,7 +114,7 @@
 
   .cardFormat
   {
-    width: 20rem;
+    width: 22rem;
     margin: 1rem 1rem;
   }
 
@@ -149,7 +149,7 @@
   .cardImg
   {
     min-height: 50%;
-    max-height: 50%x;
+    max-height: 50%;
     min-width: 100px;
     max-width: 100px;
   }
@@ -172,7 +172,8 @@
 }
 
 .grid > div {
-  flex-basis: calc(9% - 40px);
+  -ms-flex-align: center;
+  flex-basis: calc(33% - 40px);
 }
 
 .paddingForContact
