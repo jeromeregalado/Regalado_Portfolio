@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Col, Row, col } from "react-bootstrap";
 import CSSimg from '../../Images/CSSimg.png';
 import JavaImg from '../../Images/JavaImg.jpg';
 import SpringBootImg from '../../Images/SpringBootImg.png';
@@ -19,19 +19,26 @@ const SkillsetCards = () =>{
     
     const renderCard = (card, index) => {
         return(
-            <Card key={index} className='cardFormat textFormatForCard box'>
-               <Card.Img variant="top" src={card.image} />
+            <Card className='cardFormat textFormatForCard box' key={index}>
+               <Card.Img variant="top" src={card.image} className="cardImg"/>
                     <Card.Body>
+    
                     <Card.Title>{card.title}</Card.Title>
+    
                     <Card.Text>{card.text}</Card.Text>
                     </Card.Body>
             </Card>
         )
+    
     }
 
     return(
       <div className="grid">
+        <Row>
+        <Col>
         {CardInfo.map(renderCard)}
+        </Col>
+        </Row>
         </div>
     );
   }

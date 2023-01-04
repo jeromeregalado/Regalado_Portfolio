@@ -1,6 +1,6 @@
 import React from "react";
 import {Accordion} from 'react-bootstrap';
-import 'react-circular-progressbar/dist/styles.css';
+import 'react-circular-progressbgar/dist/styles.css';
 import SkillsetCards from "./AccordionComponents/SkillsetCards";
 import GaugeBars from "./AccordionComponents/GaugeBars";
 const accordionTitle1 = "My Current Programming Language Skillset";
