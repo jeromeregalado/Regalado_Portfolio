@@ -5,6 +5,7 @@ import MainCarousel from './Components/MainCarousel';
 import NavBar from './Components/NavBar';
 import AccordionAboutMe from './Components/AccordionAboutMe';
 import ContactMeForm from './Components/ContactMeForm';
+import SkillsetCards from './Components/AccordionComponents/SkillsetCards';
 
 
 

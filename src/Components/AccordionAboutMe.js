@@ -30,6 +30,7 @@ const accordionTitle4 = "My Other Traits";
 
   const AccordionAboutMe = () =>{
     return (
+      <div className="section">
       <Accordion defaultActiveKey="0">
 
               <Accordion.Item eventKey="0">
@@ -61,6 +62,7 @@ const accordionTitle4 = "My Other Traits";
               </Accordion.Item>
 
             </Accordion>
+      </div>
     );
   }
 
