@@ -36,25 +36,18 @@ const accordionTitle4 = "My Other Traits";
               <Accordion.Item eventKey="0">
                 <Accordion.Header>{accordionTitle1}</Accordion.Header>
                 <Accordion.Body className='AccordionFormat'>
-                <p align="center"><SkillsetCards/></p>
+                <p align="center"><SkillsetCards/><GaugeBars/></p>
                 </Accordion.Body>
               </Accordion.Item>
 
               <Accordion.Item eventKey="1">
-                <Accordion.Header>{accordionTitle2}</Accordion.Header>
-                <Accordion.Body className='AccordionFormat'>
-                  <GaugeBars/>
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="2">
                 <Accordion.Header>{accordionTitle3}</Accordion.Header>
                 <Accordion.Body className='AccordionFormat'>
                   <EducationalBackground/>
                 </Accordion.Body>
               </Accordion.Item>
 
-              <Accordion.Item eventKey="3">
+              <Accordion.Item eventKey="2">
                 <Accordion.Header>{accordionTitle4}</Accordion.Header>
                 <Accordion.Body className='AccordionFormat'>
                   <SkillTraits/>
