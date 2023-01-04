@@ -93,6 +93,8 @@
   {
     font-weight: bold;
     text-align: center;
+    font-size: x-large;
+
   }
 
   .mainpage
@@ -137,6 +139,7 @@
 
   .aboutMePadding
   {
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
@@ -162,6 +165,7 @@
 .box {
   margin: 1rem;
   min-height: 200px;
+  min-width: 200px;
 }
 
 .grid {
@@ -186,4 +190,3 @@
   min-height: 100vh;
   max-height: 100vh;
 }
-

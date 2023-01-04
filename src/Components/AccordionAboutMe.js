@@ -4,7 +4,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import SkillsetCards from "./AccordionComponents/SkillsetCards";
 import GaugeBars from "./AccordionComponents/GaugeBars";
 const accordionTitle1 = "My Current Programming Language Skillset";
-const accordionTitle2 = "My Gauge in my skillset";
+// const accordionTitle2 = "My Gauge in my skillset";
 const accordionTitle3 = "My Educational Background";
 const accordionTitle4 = "My Other Traits";
 
@@ -30,7 +30,8 @@ const accordionTitle4 = "My Other Traits";
 
   const AccordionAboutMe = () =>{
     return (
-      <div className="section">
+      <div className="mt-4 section morePadding">
+      <h1 className="navBarCenterText aboutMePadding">About Me</h1>
       <Accordion defaultActiveKey="0">
 
               <Accordion.Item eventKey="0">

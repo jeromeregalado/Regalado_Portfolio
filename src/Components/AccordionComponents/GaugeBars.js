@@ -8,63 +8,58 @@ const nowSpringBoot = 70;
 const nowCPlusPlus = 70;
 const nowReact = 60;
 const nowBootstrap = 60;
-const current = new Date();
-const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
 
 const GaugeBars = () => 
 {
   return(
     <div>
-    <p className='AsOfDate'>As of <span className='EMPHASISDATE'>{date}</span></p>
     <p align="center">
     <Row>
     <Col>
-    <div style={{ width: 200, height: 200 }}>
-    <span className='gaugeTitle'>CSS</span>
+    <div style={{ width: 225, height: 225 }}>
+    <p className='gaugeTitle mb-3'>CSS</p>
     <CircularProgressbar value={nowCSS} text={`${nowCSS}%`} />
     </div>
     </Col>
 
     <Col>
-    <div style={{ width: 200, height: 200 }}>
-    <span className='gaugeTitle'>Java</span>
+    <div style={{ width: 225, height: 225 }}>
+    <p className='gaugeTitle mb-3'>Java</p>
     <CircularProgressbar value={nowJava} text={`${nowJava}%`} />
     </div>
     </Col>
 
     <Col>
-    <div style={{ width: 200, height: 200 }}>
-    <span className='gaugeTitle'>Spring Boot</span>
+    <div style={{ width: 225, height: 225 }}>
+    <p className='gaugeTitle mb-3'>Spring Boot</p>
     <CircularProgressbar value={nowSpringBoot} text={`${nowSpringBoot}%`} />
     </div>
     </Col>
     </Row>
-    <br/>
-    <br/>
-
+    <br/><br/><br/>
     <Row>
     <Col>
-    <div style={{ width: 200, height: 200 }}>
-    <span className='gaugeTitle'>C++</span>
+    <div style={{ width: 225, height: 225 }}>
+    <p className='gaugeTitle'>C++</p>
     <CircularProgressbar value={nowCPlusPlus} text={`${nowCPlusPlus}%`} />
     </div>
     </Col>
 
     <Col>
-    <div style={{ width: 200, height: 200 }}>
-    <span className='gaugeTitle'>React</span>
+    <div style={{ width: 225, height: 225 }}>
+    <p className='gaugeTitle'>React</p>
     <CircularProgressbar value={nowReact} text={`${nowReact}%`} />
     </div>
     </Col>
 
     <Col>
-    <div style={{ width: 200, height: 200 }}>
-      <span className='gaugeTitle'>Bootstrap</span>
+    <div style={{ width: 225, height: 225 }}>
+      <p className='gaugeTitle'>Bootstrap</p>
       <CircularProgressbar value={nowBootstrap} text={`${nowBootstrap}%`} />
     </div>
     </Col>
     </Row>
-    <br/>
+    <br/><br/>
     </p>
     </div>
   );

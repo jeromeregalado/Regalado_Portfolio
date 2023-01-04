@@ -6,10 +6,12 @@ import SpringBootImg from '../../Images/SpringBootImg.png';
 import ReactImg from '../../Images/ReactImg.png';
 import CPPimg from '../../Images/CPlusPlusImg.png'
 import BootstrapImg from '../../Images/BootstrapImg.png';
+const current = new Date();
+const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
 
 const SkillsetCards = () =>{
     const CardInfo =[
-        {image:CSSimg, title: "CSS", text: "Random Text"},
+        {image:CSSimg, title: "CSS", text: "XD"},
         {image:JavaImg, title: "Java", text: "Random Text"},
         {image:SpringBootImg, title: "Spring Boot", text: "Random Text"},
         {image:CPPimg, title: "C++", text: "Random Text"},
@@ -20,7 +22,7 @@ const SkillsetCards = () =>{
     const renderCard = (card, index) => {
         return(
             <Card key={index} className='cardFormat textFormatForCard box'>
-               <img variant="top" src={card.image} className="cardImg m-auto"/>
+               <Card.Img variant="top" src={card.image} className="cardImg m-auto"/>
                     <Card.Body>
                     <Card.Title>{card.title}</Card.Title>
                     <Card.Text>{card.text}</Card.Text>
@@ -30,7 +32,10 @@ const SkillsetCards = () =>{
     }
 
     return(
+      <>
+      <p className='AsOfDate'>As of <span className='EMPHASISDATE'>{date}</span></p>
       <div className="grid">{CardInfo.map(renderCard)}</div>
+      </>
     );
   }
 

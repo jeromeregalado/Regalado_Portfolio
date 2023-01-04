@@ -5,7 +5,6 @@ import MainCarousel from './Components/MainCarousel';
 import NavBar from './Components/NavBar';
 import AccordionAboutMe from './Components/AccordionAboutMe';
 import ContactMeForm from './Components/ContactMeForm';
-import SkillsetCards from './Components/AccordionComponents/SkillsetCards';
 
 
 
@@ -23,7 +22,6 @@ function App()
           </section>
 
           <section id="aboutMe">
-            <h1 className="navBarCenterText aboutMePadding">About Me</h1>
             <AccordionAboutMe/>
           </section>
 
