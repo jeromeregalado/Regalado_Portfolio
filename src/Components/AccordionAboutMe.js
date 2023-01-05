@@ -31,7 +31,7 @@ const accordionTitle4 = "My Other Traits";
     return (
       <div className="mt-4 section morePadding">
       <h1 className="navBarCenterText aboutMePadding">About Me</h1>
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey="0" >
 
               <Accordion.Item eventKey="0">
                 <Accordion.Header>{accordionTitle1}</Accordion.Header>
