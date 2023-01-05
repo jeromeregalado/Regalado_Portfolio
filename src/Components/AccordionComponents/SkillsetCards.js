@@ -24,10 +24,11 @@ const SkillsetCards = () =>{
     const renderCard = (card, index) => {
         return(
             <Card key={index} className='cardFormat textFormatForCard box'>
+                 <Card.Img variant="top" src={card.image} className="cardImg m-auto pt-2"/>
                     <Card.Body>
-                    <div style={{padding: "20px 20px 20px 20px",maxHeight:220,maxWidth:220}}>
+                    <div style={{padding: "20px 20px 20px 20px",maxHeight:200,maxWidth:200}}>
                             <CircularProgressbarWithChildren value={card.performance} text={`${card.performance}%`}>
-                            <Card.Img variant="top" src={card.image} className="cardImg m-auto"/><p className="gaugeTitle paddingforGaugeTitle">{card.title}</p>
+                            <p className="gaugeTitle paddingforGaugeTitle">{card.title}</p>
                             </CircularProgressbarWithChildren>
                     </div>
                     </Card.Body>
