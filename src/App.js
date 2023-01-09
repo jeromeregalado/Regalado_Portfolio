@@ -7,7 +7,6 @@ import AccordionAboutMe from './Components/AccordionAboutMe';
 import ContactMeForm from './Components/ContactMeForm';
 import Projects from './Components/Projects';
 import FooterNavBar from './Components/NavBarComponents/FooterNavBar';
-import { MDBFooter, MDBContainer } from 'mdb-react-ui-kit';
 
 function App() 
 {
