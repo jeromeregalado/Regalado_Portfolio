@@ -29,7 +29,7 @@ const accordionTitle4 = "My Other Traits";
 
   const AccordionAboutMe = () =>{
     return (
-      <div className="mt-4 section morePadding">
+      <div className="section paddingForContact">
       <h1 className="navBarCenterText aboutMePadding">About Me</h1>
       <Accordion defaultActiveKey="0" >
 
