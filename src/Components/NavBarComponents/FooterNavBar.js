@@ -6,7 +6,7 @@ const FooterNavBar = () => {
     <MDBFooter className='text-center text-white fixed-bottom'>
       <MDBContainer className='p-4'>
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='facebook' />
+            <MDBIcon fab icon='fa-facebook' />
           </MDBBtn>
 
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
@@ -30,7 +30,7 @@ const FooterNavBar = () => {
       </MDBContainer>
       
 
-      <div className='text-center p-3'>
+      <div className='text-center p-2'>
       <p className="footerFormat">Jerome Regalado &#169; {new Date().getFullYear()}</p>
       </div>
     </MDBFooter>
