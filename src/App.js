@@ -2,10 +2,12 @@ import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MainCarousel from './Components/MainCarousel';
-import NavBar from './Components/NavBar';
+import NavBar from './Components/NavBarComponents/NavBar';
 import AccordionAboutMe from './Components/AccordionAboutMe';
 import ContactMeForm from './Components/ContactMeForm';
 import Projects from './Components/Projects';
+import FooterNavBar from './Components/NavBarComponents/FooterNavBar';
+import { MDBFooter, MDBContainer } from 'mdb-react-ui-kit';
 
 function App() 
 {
@@ -18,6 +20,7 @@ function App()
 
           <section id="home">
             <MainCarousel/>
+            <FooterNavBar/>
           </section>
 
           <section id="aboutMe">
@@ -31,8 +34,6 @@ function App()
           <section id="contactMe">
             <ContactMeForm/>
           </section>
-
-          <footer><p className="footerFormat">Jerome Regalado &#169; {new Date().getFullYear()}</p></footer>
         </body>
     </div>
   );
