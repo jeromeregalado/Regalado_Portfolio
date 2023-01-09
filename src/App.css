@@ -174,7 +174,8 @@
 }
 
 .grid {
-  min-height: 50%;
+  min-height: 25%;
+  min-width: fit-content;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -182,7 +183,7 @@
 
 .grid > div {
   -ms-flex-align: center;
-  flex-basis: calc(33% - 30px);
+  flex-basis: calc(33% - 40px);
   flex-direction: row;
   flex-flow: row wrap;
 }
