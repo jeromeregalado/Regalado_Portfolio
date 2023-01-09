@@ -152,9 +152,9 @@
   
   .cardImg
   {
-    min-height: 22vh ;
+    min-height: 10vh ;
     max-height: 25vh;
-    min-width: 23vh auto;
+    min-width: 10vh;
     max-width: 23vh;
     padding: 1rem 1rem 0 1rem;
     margin:auto;
@@ -182,7 +182,7 @@
 
 .grid > div {
   -ms-flex-align: center;
-  flex-basis: calc(33% - 40px);
+  flex-basis: calc(33% - 30px);
   flex-direction: row;
   flex-flow: row wrap;
 }
@@ -196,6 +196,7 @@
 {
   min-height: 100vh;
   max-height: 100vh;
+  max-width: none;
 }
 
 .paddingforGaugeTitle

@@ -5,7 +5,7 @@ import softvisionImage from ".././Images/softvisionImage.png"
 const MainCarousel = () =>{
     return(
       <Carousel>
-                <Carousel.Item interval={3000}>
+                <Carousel.Item interval={4000}>
                 <img
                   className="d-block w-100 carouselImg"
                   src="https://i.pinimg.com/originals/a1/56/e0/a156e097ec112504e882d5df0a90fec0.jpg"
@@ -14,7 +14,7 @@ const MainCarousel = () =>{
                   <h1 class="Hello">Hello</h1>
                   <p class="Hello1">I'm Jerome </p>
               </Carousel.Item>
-              <Carousel.Item interval={3000}>
+              <Carousel.Item interval={4000}>
                 <img
                   className="d-block w-100 carouselImg"
                   src={softvisionImage}
@@ -27,7 +27,7 @@ const MainCarousel = () =>{
                 </Carousel.Caption>
 
               </Carousel.Item>
-              <Carousel.Item interval={3000}>
+              <Carousel.Item interval={4000}>
                 <img
                   className="d-block w-100 carouselImg"
                   src="https://media.tenor.com/IDFH8znFG3QAAAAC/spongebob-squarepants-spongebob.gif"
