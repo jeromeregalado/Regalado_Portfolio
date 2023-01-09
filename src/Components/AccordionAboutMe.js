@@ -12,7 +12,7 @@ const accordionTitle4 = "My Other Traits";
       <ul>
         <li><h3>Very Fluent in English</h3><p>I can speak and write in English proficiently</p></li>
         <li><h3>Team Oriented, but can also work solo if needed</h3><p>I love having company in doing anything</p></li>
-        <li><h3>Easily adaptable</h3><p>Adaptable in environments and athmospheres</p></li>
+        <li><h3>Easily adaptable</h3><p>Adaptable in environments and atmospheres</p></li>
       </ul>
     );
   }
