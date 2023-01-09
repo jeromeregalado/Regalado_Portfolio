@@ -93,7 +93,6 @@
   {
     font-weight: bold;
     text-align: center;
-    font-size: 1vw;
 
   }
 
@@ -116,7 +115,7 @@
 
   .cardFormat
   {
-    width: 33%;
+    min-width: auto;
     min-height: auto;
     margin: 1rem 1rem;
   }
@@ -152,10 +151,10 @@
   
   .cardImg
   {
-    min-height: 21vh;
-    max-height: 25vh;
-    min-width: 10vh;
-    max-width: 23vh;
+    min-height: 120px;
+    max-height: 20vh;
+    min-width: 120px;
+    max-width: 20vh;
     padding: 1rem 1rem 0 1rem;
     margin:auto;
   }
@@ -174,8 +173,7 @@
 }
 
 .grid {
-  min-height: 25%;
-  min-width: fit-content;
+  min-height: 25%;  
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -183,7 +181,7 @@
 
 .grid > div {
   -ms-flex-align: center;
-  flex-basis: calc(33% - 40px);
+  flex-basis:content;
   flex-direction: row;
   flex-flow: row wrap;
 }
