@@ -5,6 +5,7 @@ import MainCarousel from './Components/MainCarousel';
 import NavBar from './Components/NavBar';
 import AccordionAboutMe from './Components/AccordionAboutMe';
 import ContactMeForm from './Components/ContactMeForm';
+import Projects from './Components/Projects';
 
 function App() 
 {
@@ -21,6 +22,10 @@ function App()
 
           <section id="aboutMe">
             <AccordionAboutMe/>
+          </section>
+
+          <section id="projects">
+            <Projects/>
           </section>
 
           <section id="contactMe">
