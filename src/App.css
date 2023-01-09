@@ -210,3 +210,15 @@
   width: 33%;
 }
 
+.grid2
+{
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.paddingEmail
+{
+  padding-right: 2rem;
+}
