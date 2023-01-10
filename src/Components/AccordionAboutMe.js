@@ -42,14 +42,14 @@ const accordionTitle4 = "My Other Traits";
 
               <Accordion.Item eventKey="1">
                 <Accordion.Header>{accordionTitle3}</Accordion.Header>
-                <Accordion.Body className='AccordionFormat'>
+                <Accordion.Body className='AccordionFormat h-100'>
                   <EducationalBackground/>
                 </Accordion.Body>
               </Accordion.Item>
 
               <Accordion.Item eventKey="2">
                 <Accordion.Header>{accordionTitle4}</Accordion.Header>
-                <Accordion.Body className='AccordionFormat'>
+                <Accordion.Body className='AccordionFormat h-100'>
                   <SkillTraits/>
                 </Accordion.Body>
               </Accordion.Item>

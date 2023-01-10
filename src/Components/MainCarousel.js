@@ -7,7 +7,7 @@ const MainCarousel = () =>{
       <Carousel>
                 <Carousel.Item interval={4000}>
                 <img
-                  className="d-block w-100 carouselImg"
+                  className="d-block w-100 carouselImg img-fluid"
                   src="https://i.pinimg.com/originals/a1/56/e0/a156e097ec112504e882d5df0a90fec0.jpg"
                   alt="First slide"
                 />
@@ -16,7 +16,7 @@ const MainCarousel = () =>{
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <img
-                  className="d-block w-100 carouselImg"
+                  className="d-block w-100 carouselImg img-fluid"
                   src={softvisionImage}
                   alt="Second slide"
                 />
@@ -29,7 +29,7 @@ const MainCarousel = () =>{
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <img
-                  className="d-block w-100 carouselImg"
+                  className="d-block w-100 carouselImg img-fluid"
                   src="https://media.tenor.com/IDFH8znFG3QAAAAC/spongebob-squarepants-spongebob.gif"
                   alt="Third slide"
                 />
