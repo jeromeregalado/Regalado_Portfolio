@@ -1,39 +1,18 @@
 import React from 'react';
-import {MDBFooter, MDBContainer, MDBIcon, MDBBtn} from 'mdb-react-ui-kit';
+import { Container } from 'react-bootstrap';
+import { Facebook, Github, Instagram, Mailbox } from 'react-bootstrap-icons';
 
 const FooterNavBar = () => {
   return (
-    <MDBFooter className='text-center text-white fixed-bottom'>
-      <MDBContainer className='p-4'>
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='fa-facebook' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='twitter' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='google' />
-          </MDBBtn>
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='instagram' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='linkedin-in' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='github' />
-          </MDBBtn>
-      </MDBContainer>
-      
-
-      <div className='text-center p-2'>
-      <p className="footerFormat">Jerome Regalado &#169; {new Date().getFullYear()}</p>
-      </div>
-    </MDBFooter>
+    <footer className='text-center text-white fixed-bottom colorForFooter'>
+      <Container className='pt-4'>
+          <a href="#!"><Facebook size={30} className="mx-3"/></a>
+          <a href="#!"><Instagram size={30} className="mx-3"/></a>
+          <a href="#!"><Github size={30} className="mx-3"/></a>
+          <a href="#!"><Mailbox size={30} className="mx-3"/></a>
+          <p className="footerFormat">Jerome Regalado &#169; {new Date().getFullYear()}</p>
+      </Container>
+    </footer>
   );
 }
 
