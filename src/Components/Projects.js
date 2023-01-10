@@ -11,7 +11,7 @@ const Projects = () => {
   
   const renderProjectCard = (card, index) => {
       return(
-        <Card style={{ width: '18rem', margin:3 }} className='cardFormat textFormatForCard box'>
+        <Card style={{ width: '18rem', marginRight:"1rem" }} className='cardFormat textFormatForCard box'>
             <a href={card.link} target="_blank" className='center'><Card.Img variant="top" src={card.image} className=""/></a>
             <Card.Body className='text-center'>
               <Card.Title>{card.title}</Card.Title>
@@ -27,7 +27,7 @@ const Projects = () => {
 
   return(
     <div className="section paddingForContact">
-      <h1 className="navBarCenterText">Projects</h1>
+      <h1 className="navBarCenterText aboutMePadding">Projects</h1>
       <Container><div className="grid2">{ProjectInfo.map(renderProjectCard)}</div></Container>
       </div>
   );
