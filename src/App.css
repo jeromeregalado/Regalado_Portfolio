@@ -32,24 +32,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.description-main
-{
+.description-main {
   text-align: left;
 }
 
-.black-color-text
-{
-  color:black;
+.black-color-text {
+  color: black;
   text-align: left;
 }
 
-.Hello
-{
+.Hello {
   position: absolute;
   margin: 0;
   color: white;
@@ -59,9 +57,8 @@
   font-size: xxx-large;
 }
 
-.Hello1
-{
-  position:absolute;
+.Hello1 {
+  position: absolute;
   margin: 0;
   color: white;
   left: 50%;
@@ -70,99 +67,86 @@
   transform: translate(-50%, 80%);
 }
 
-.navBarCenterText
-{
+.navBarCenterText {
   margin-top: 2rem;
   text-align: center;
 }
 
-.progIcons
-{
+.progIcons {
   height: 50%;
   max-width: 50%;
-  margin:2%
+  margin: 2%
 }
 
-  .nav-links:hover 
-  {
-  background-color:blue; /*will change background-color of element on hover */
-  color: white; /*will change color of text within the element on hover */
-  }
+.nav-links:hover {
+  background-color: blue;
+  /*will change background-color of element on hover */
+  color: white;
+  /*will change color of text within the element on hover */
+}
 
-  .gaugeTitle
-  {
-    font-weight: bold;
-    text-align: center;
+.gaugeTitle {
+  font-weight: bold;
+  text-align: center;
 
-  }
+}
 
-  .mainpage
-  {
-    background-color: #212121;
-    color:white
-  }
+.mainpage {
+  background-color: #212121;
+  color: white
+}
 
-  .EMPHASISDATE
-  {
-    font-weight: bolder;
-  }
+.EMPHASISDATE {
+  font-weight: bolder;
+}
 
-  .AsOfDate
-  {
-    text-align: center;
-    font-size: xx-large;
-  }
+.AsOfDate {
+  text-align: center;
+  font-size: xx-large;
+}
 
-  .cardFormat
-  {
-    min-width: auto;
-    min-height: auto;
-    margin: 1rem 1rem;
-  }
+.cardFormat {
+  min-width: auto;
+  min-height: auto;
+  margin: 1rem 1rem;
+}
 
-  .formFormat
-  {
-    margin: 2rem 3rem;
-    padding-bottom: 2rem;
-  }
+.formFormat {
+  margin: 2rem 3rem;
+  padding-bottom: 2rem;
+}
 
-  .AccordionFormat
-  {
-    background-color: #212121;
-    color: white;
-  }
+.AccordionFormat {
+  background-color: #212121;
+  color: white;
+}
 
-  .textFormatForCard
-  {
-    color: black;
-  }
+.textFormatForCard {
+  color: black;
+}
 
-  .aboutMePadding
-  {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
+.aboutMePadding {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
-  .footerFormat
-  {
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .cardImg
-  {
-    min-height: 120px;
-    max-height: 20vh;
-    min-width: 120px;
-    max-width: 16vh;
-    padding: 1rem 1rem 0 1rem;
-    margin:auto;
-  }
+.footerFormat {
+  text-align: center;
+  font-weight: bold;
+}
 
-  section
-  {
-    min-height: 100vh;
-  }
+.cardImg {
+  min-height: 120px;
+  max-height: 20vh;
+  min-width: 120px;
+  max-width: 16vh;
+  padding: 1rem 1rem 0 1rem;
+  margin: auto;
+}
+
+section {
+  min-height: 100vh;
+}
 
 .box {
   margin: 1rem;
@@ -172,57 +156,78 @@
   max-width: 33%;
 }
 
+.box2 {
+  margin: 1rem;
+  min-height: 33%;
+  max-height: fit-content;
+  min-width: 33%;
+  max-width: 100%;
+}
+
 .grid {
-  min-height: 25%;  
+  min-height: 25%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.grid > div {
+.grid>div {
   -ms-flex-align: center;
-  flex-basis:content;
+  flex-basis: content;
   flex-direction: row;
   flex-flow: row wrap;
 }
 
-.paddingForContact
-{
+.paddingForContact {
   padding-top: 5%;
 }
 
-.carouselImg
-{
+.carouselImg {
   min-height: 88vh;
   max-height: 88vh;
   max-width: none;
 }
 
-.paddingforGaugeTitle
-{
+.paddingforGaugeTitle {
   margin-top: 50%;
 }
 
-.gaugeStyle
-{
+.gaugeStyle {
   min-height: auto;
   width: 33%;
 }
 
-.grid2
-{
+.grid2 {
   min-width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.paddingEmail
-{
+.paddingEmail {
   padding-right: 2rem;
 }
 
-.colorForFooter
-{
-  background-color: rgba(0, 0, 0, 0.5);
+.colorForFooter {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.projImg {
+  max-height: 200px;
+  max-width: 200px;
+  align-content: center;
+  background-color: white;
+}
+
+Navbar .nav-links:active {
+  background-color: blue;
+  /*will change background-color of element on hover */
+  color: white;
+  /*will change color of text within the element on hover */
+}
+
+.projCardFormat {
+  min-width: auto;
+  min-height: fit-content;
+  margin: 1rem 1rem;
 }
