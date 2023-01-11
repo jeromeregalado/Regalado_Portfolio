@@ -1,3 +1,4 @@
+import { getValue } from "@testing-library/user-event/dist/utils";
 import React from "react";
 import { Navbar, Offcanvas, Nav, Container } from "react-bootstrap";
 
@@ -19,10 +20,10 @@ const NavBar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className="nav-links" href="#home" spy to="Home">Home</Nav.Link>
-              <Nav.Link className="nav-links" href="#aboutMe" spy to="About Me">About Me</Nav.Link>
-              <Nav.Link className="nav-links" href="#projects" spy to="Projects">Projects</Nav.Link>
-              <Nav.Link className="nav-links" href="#contactMe" spy to="Contact Me">Contact Me</Nav.Link>
+              <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
+              <Nav.Link className="nav-links" href="#aboutMe" >About Me</Nav.Link>
+              <Nav.Link className="nav-links" href="#projects">Projects</Nav.Link>
+              <Nav.Link className="nav-links" href="#contactMe">Contact Me</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

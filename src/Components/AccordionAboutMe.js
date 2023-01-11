@@ -31,7 +31,7 @@ const AccordionAboutMe = () => {
   return (
     <div className="section paddingForContact">
       <h1 className="navBarCenterText aboutMePadding">About Me</h1>
-      <Container>
+      <Container fluid>
         <Accordion defaultActiveKey="0" >
 
           <Accordion.Item eventKey="0">

@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <div className="section paddingForContact">
       <h1 className="navBarCenterText aboutMePadding">Projects</h1>
-      <Container className='center'><Row>{ProjectInfo.map(renderProjectCard)}</Row></Container>
+      <Container fluid><Row className='m-auto p-auto'>{ProjectInfo.map(renderProjectCard)}</Row></Container>
     </div>
   );
 }
