@@ -211,7 +211,7 @@ section {
 
 .formatForFooter {
   position: fixed;
-  bottom: 30%;
+  bottom: 16px;
   left: 16px;
   font-size: 18px;
 }
