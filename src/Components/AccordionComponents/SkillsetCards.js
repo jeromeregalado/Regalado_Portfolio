@@ -30,7 +30,7 @@ const SkillsetCards = () => {
             <Card key={index} className='cardFormat textFormatForCard'>
                 <Card.Img variant="top" src={card.image} className="cardImg m-auto" />
                 <Card.Body>
-                    <div style={{ margin: "10px 10px 10px 10px", minHeight: 100, minWidth: 100, maxHeight: 180, maxWidth: 180, padding: "25px 25px" }}>
+                    <div style={{ margin: "10px 10px 10px 10px", minHeight: 100, minWidth: 100, maxHeight: 170, maxWidth: 170, padding: "25px 25px" }}>
                         <CircularProgressbarWithChildren value={card.performance} text={`${card.performance}%`}>
                             <p className="gaugeTitle paddingforGaugeTitle">{card.title}</p>
                         </CircularProgressbarWithChildren>

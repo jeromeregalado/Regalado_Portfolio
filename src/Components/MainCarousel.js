@@ -1,13 +1,14 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Container } from "react-bootstrap";
 import softvisionImage from ".././Images/softvisionImage.png"
 
 const MainCarousel = () => {
   return (
+    <Container>
     <Carousel>
       <Carousel.Item interval={4000}>
         <img
-          className="d-block w-100 carouselImg img-fluid"
+          className="d-block w-100 carouselImg"
           src="https://i.pinimg.com/originals/a1/56/e0/a156e097ec112504e882d5df0a90fec0.jpg"
           alt="First slide"
         />
@@ -16,7 +17,7 @@ const MainCarousel = () => {
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
-          className="d-block w-100 carouselImg img-fluid"
+          className="d-block w-100 carouselImg"
           src={softvisionImage}
           alt="Second slide"
         />
@@ -29,7 +30,7 @@ const MainCarousel = () => {
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
-          className="d-block w-100 carouselImg img-fluid"
+          className="d-block w-100 carouselImg"
           src="https://media.tenor.com/IDFH8znFG3QAAAAC/spongebob-squarepants-spongebob.gif"
           alt="Third slide"
         />
@@ -42,6 +43,7 @@ const MainCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </Container>
   )
 }
 

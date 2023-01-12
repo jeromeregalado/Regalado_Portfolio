@@ -5,9 +5,6 @@ const ContactMeForm = () => {
   return (
     <div className="section paddingForContact">
       <Container>
-        <h1 className="navBarCenterText">Contact Me</h1>
-
-
         <Form className='formFormat' action="https://getform.io/f/325d8b9e-e78e-42ec-afae-6e9ab3501a67" method="POST">
           <Row>
             <Form.Group className="mb-3 paddingEmail" controlId="formBasicEmail" as={Col} md="6">

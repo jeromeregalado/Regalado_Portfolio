@@ -1,35 +1,53 @@
-import { getValue } from "@testing-library/user-event/dist/utils";
 import React from "react";
-import { Navbar, Offcanvas, Nav, Container } from "react-bootstrap";
+import { Navbar, Offcanvas, Nav, Container, NavLink  } from "react-bootstrap";
 
 const NavBar = () => {
-  return (
+  const sections = document.querySelectorAll("section");
+  const navLi = document.querySelectorAll("nav .container ul li");
+  window.onscroll = () => {
+    var current = "";
+  
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (scrollY >= sectionTop - 60) {
+        current = section.getAttribute("id"); }
+    });
+  
+    navLi.forEach((li) => {
+      NavLink.classList.remove("active");
+      if (li.classList.contains(current)) {
+        li.classList.add("active");
+      }
+    });
+  };
+    return (
     <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#home">Jerome Regalado</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-sm`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
-          placement="end"
-        >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-              Links for my webpage
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
-              <Nav.Link className="nav-links" href="#aboutMe" >About Me</Nav.Link>
-              <Nav.Link className="nav-links" href="#projects">Projects</Nav.Link>
-              <Nav.Link className="nav-links" href="#contactMe">Contact Me</Nav.Link>
-            </Nav>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
-      </Container>
-    </Navbar>
-  );
-}
-
-export default NavBar;
+          <Container>
+            <Navbar.Brand href="#home">Jerome Regalado</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-lg`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                  Links for my webpage
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                    <Nav className="justify-content-end flex-grow-1 pe-3">
+                      <ul>
+                      <li><a className="nav-links" href="#home" spy to="Home">Home</a></li>
+                      <li><a className="nav-links" href="#aboutMe" spy to="About Me">About Me</a></li>
+                      <li><a className="nav-links" href="#projects" spy to="Projects">Projects</a></li>
+                      <li><a className="nav-links" href="#contactMe" spy to="Contact Me">Contact Me</a></li>
+                      </ul>
+                    </Nav>
+              </Offcanvas.Body>
+              </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+    );
+  }
+  export default NavBar;

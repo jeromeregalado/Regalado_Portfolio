@@ -78,8 +78,8 @@
   margin: 2%
 }
 
-.nav-links:hover {
-  background-color: blue;
+.nav-links:hover, .nav-links:active {
+  background-color: red;
   /*will change background-color of element on hover */
   color: white;
   /*will change color of text within the element on hover */
@@ -157,7 +157,6 @@ section {
 }
 
 .box2 {
-  margin: 1rem;
   min-height: 33%;
   max-height: fit-content;
   min-width: 33%;
@@ -186,6 +185,8 @@ section {
   min-height: 88vh;
   max-height: 88vh;
   max-width: none;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .paddingforGaugeTitle {
@@ -208,26 +209,21 @@ section {
   padding-right: 2rem;
 }
 
-.colorForFooter {
-  background-color: rgba(0, 0, 0, 0.7);
+.formatForFooter {
+  position: fixed;
+  bottom: 30%;
+  left: 16px;
+  font-size: 18px;
 }
 
 .projImg {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 120px;
+  max-width: 150px;
   align-content: center;
   background-color: white;
-}
-
-Navbar .nav-links:active {
-  background-color: blue;
-  /*will change background-color of element on hover */
-  color: white;
-  /*will change color of text within the element on hover */
 }
 
 .projCardFormat {
   min-width: auto;
   min-height: fit-content;
-  margin: 1rem 1rem;
 }

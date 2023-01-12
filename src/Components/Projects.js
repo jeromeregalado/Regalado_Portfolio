@@ -6,13 +6,14 @@ const Projects = () => {
 
   const ProjectInfo = [
     { image: SBImg, title: "CSV Academy Project Simulation", link: "https://github.com/csv-academy-batch2/mjolnir-team" },
+    { image: SBImg, title: "Mini Project CSV Academy", link: "https://github.com/jeromeregalado/MiniProjectGroup5" },
     { image: SBImg, title: "Mini Project CSV Academy", link: "https://github.com/jeromeregalado/MiniProjectGroup5" }
   ]
 
   const renderProjectCard = (card, index) => {
     return (
-      <Col>
-        <Card style={{ width: '30rem' }} className='projCardFormat textFormatForCard bg-white box2'>
+      <Col xs lg="3">
+        <Card style={{ width: '20rem', margin:'1rem 0.5rem' }} className='projCardFormat textFormatForCard bg-white box2'>
           <a href={card.link} target="_blank" className='center m-auto'><Card.Img variant="top" src={card.image} className="projImg" /></a>
           <Card.Body className='text-center'>
             <Card.Title>{card.title}</Card.Title>
@@ -29,8 +30,7 @@ const Projects = () => {
 
   return (
     <div className="section paddingForContact">
-      <h1 className="navBarCenterText aboutMePadding">Projects</h1>
-      <Container fluid><Row className='m-auto p-auto'>{ProjectInfo.map(renderProjectCard)}</Row></Container>
+      <Container><Row className='m-auto p-auto'>{ProjectInfo.map(renderProjectCard)}</Row></Container>
     </div>
   );
 }
