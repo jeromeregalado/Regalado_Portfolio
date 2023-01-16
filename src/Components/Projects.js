@@ -6,9 +6,9 @@ import ReactImg from '../Images/ReactImg.png'
 const Projects = () => {
 
   const ProjectInfo = [
-    { image: SBImg, title: "CSV Academy Project Simulation", link: "https://github.com/csv-academy-batch2/mjolnir-team", desc: "A project made with the intention of simulating the bootcampers with a sandbox project. Spring Boot and Postgres were used in this project"},
-    { image: SBImg, title: "Mini Project CSV Academy", link: "https://github.com/jeromeregalado/MiniProjectGroup5", desc: "A mini project tasked by the instructors on creating an backend project. Group consisted of Jojo Hipolito, Eshant Manghnani and yours truly" },
-    { image: ReactImg, title: "Current Portfolio Page", link: "https://github.com/jeromeregalado/MiniProjectGroup5", desc: "This current page that you're looking at. Hello! This is my code for my page" }
+    { image: SBImg, title: "CSV Academy Project Simulation", link: "https://github.com/csv-academy-batch2/mjolnir-team", desc: "A project made with the intention of simulating the bootcampers with a sandbox project. Group consisted of John Michael Flores, Alex John Mataac, Eshant Manghnani, Justin Morales, and yours truly.", components: "Spring Boot, Postgres, Azure DevOps"},
+    { image: SBImg, title: "Mini Project CSV Academy", link: "https://github.com/jeromeregalado/MiniProjectGroup5", desc: "A mini project tasked by the instructors on creating an backend project. Group consisted of Jojo Hipolito, Eshant Manghnani and yours truly" , components: "Spring Boot, H2-console, Swagger"},
+    { image: ReactImg, title: "Current Portfolio Page", link: "https://github.com/jeromeregalado/MiniProjectGroup5", desc: "This current page that you're looking at. Hello! This is my code for my page", components: "ReactJS, Bootstrap, React-Bootstrap"}
   ]
 
   const renderProjectCard = (card, index) => {
@@ -19,7 +19,10 @@ const Projects = () => {
           <Card.Body className='text-center'>
             <Card.Title>{card.title}</Card.Title>
             <Card.Text>
-              {card.desc }
+              {card.desc}
+            </Card.Text>
+            <Card.Text>
+              Components used: {card.components}
             </Card.Text>
             <Button variant="primary" href={card.link} target="_blank" rel="noreferrer">Go to project</Button>
           </Card.Body>
