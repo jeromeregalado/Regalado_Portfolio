@@ -4,7 +4,7 @@ import { Navbar, Offcanvas, Nav, Container } from "react-bootstrap";
 
 const NavBar = () => {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark" expand="lg" id="navbar-target">
+    <Navbar fixed="top" bg="dark" variant="dark" expand="lg" id="navbar-target" collapseOnSelect>
       <Container fluid>
         <Navbar.Brand href="#home">Jerome Regalado</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
