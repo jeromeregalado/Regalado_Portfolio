@@ -12,13 +12,11 @@ const NavBar = () => {
     <Navbar fixed="top" bg="dark" variant="dark" expand="lg" id="navbar-target">
       <Container fluid>
         <Navbar.Brand href="#home">Jerome Regalado</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleOffCanvas}/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-sm`}
           aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
           placement="end"
-          show={show}
-          onHide={toggleOffCanvas}
         >
           <Offcanvas.Header closeButton placeholder="start">
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
@@ -27,10 +25,10 @@ const NavBar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className="nav-links" href="#home" onClick={toggleOffCanvas}>Home</Nav.Link>
-              <Nav.Link className="nav-links" href="#aboutMe" onClick={toggleOffCanvas}>About Me</Nav.Link>
-              <Nav.Link className="nav-links" href="#projects" onClick={toggleOffCanvas}>Projects</Nav.Link>
-              <Nav.Link className="nav-links" href="#contactMe" onClick={toggleOffCanvas}>Contact Me</Nav.Link>
+              <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
+              <Nav.Link className="nav-links" href="#aboutMe">About Me</Nav.Link>
+              <Nav.Link className="nav-links" href="#projects">Projects</Nav.Link>
+              <Nav.Link className="nav-links" href="#contactMe">Contact Me</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
