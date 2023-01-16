@@ -8,26 +8,16 @@ const NavBar = () => {
       <Container fluid>
         <Navbar.Brand href="#home">Jerome Regalado</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-        <Navbar.Offcanvas
+        <Navbar.Collapse
           id={`offcanvasNavbar-expand-sm`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
-          placement="end"
         >
-        
-          <Offcanvas.Header closeButton placeholder="start">
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-              Links for my webpage
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
               <Nav.Link className="nav-links" href="#aboutMe">About Me</Nav.Link>
               <Nav.Link className="nav-links" href="#projects">Projects</Nav.Link>
               <Nav.Link className="nav-links"  href="#contactMe">Contact Me</Nav.Link>
             </Nav>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
