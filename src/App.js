@@ -19,7 +19,6 @@ function App()
 
           <section id="home">
             <MainCarousel/>
-            <FooterNavBar/>
           </section>
 
           <section id="aboutMe">
@@ -33,6 +32,7 @@ function App()
           <section id="contactMe">
             <ContactMeForm/>
           </section>
+          <FooterNavBar/>
         </body>
     </div>
   );

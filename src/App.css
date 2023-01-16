@@ -210,8 +210,7 @@ section {
 }
 
 .formatForFooter {
-  position: fixed;
-  bottom: 16px;
+  bottom: 80px;
   left: 16px;
   font-size: 18px;
 }
@@ -227,3 +226,4 @@ section {
   min-width: auto;
   min-height: fit-content;
 }
+
