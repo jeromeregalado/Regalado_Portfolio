@@ -13,14 +13,14 @@ const Projects = () => {
     return (
       <Col>
         <Card style={{ width: '30rem' }} className='projCardFormat textFormatForCard bg-white box2'>
-          <a href={card.link} target="_blank" className='center m-auto'><Card.Img variant="top" src={card.image} className="projImg" /></a>
+          <a href={card.link} target="_blank" rel="noreferrer" className='center m-auto'><Card.Img variant="top" src={card.image} className="projImg" /></a>
           <Card.Body className='text-center'>
             <Card.Title>{card.title}</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Card.Text>
-            <Button variant="primary" href={card.link} target="_blank">Go to project</Button>
+            <Button variant="primary" href={card.link} target="_blank" rel="noreferrer">Go to project</Button>
           </Card.Body>
         </Card>
       </Col>

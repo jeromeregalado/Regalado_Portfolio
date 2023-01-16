@@ -1,5 +1,4 @@
-
-import {React, useState} from "react";
+import React from "react";
 import { Navbar, Offcanvas, Nav, Container } from "react-bootstrap";
 
 const NavBar = () => {
@@ -13,17 +12,17 @@ const NavBar = () => {
           aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
           placement="end"
         >
-          <Offcanvas.Header closeButton>
+          <Offcanvas.Header closeButton placeholder="start">
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
               Links for my webpage
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
-              <Nav.Link className="nav-links" href="#aboutMe">About Me</Nav.Link>
-              <Nav.Link className="nav-links" href="#projects">Projects</Nav.Link>
-              <Nav.Link className="nav-links" href="#contactMe">Contact Me</Nav.Link>
+              <Nav.Link className="nav-links" href="#home" data-bs-dismiss="offcanvas">Home</Nav.Link>
+              <Nav.Link className="nav-links" href="#aboutMe" data-bs-dismiss="offcanvas">About Me</Nav.Link>
+              <Nav.Link className="nav-links" href="#projects" data-bs-dismiss="offcanvas">Projects</Nav.Link>
+              <Nav.Link className="nav-links" href="#contactMe" data-bs-dismiss="offcanvas">Contact Me</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
