@@ -11,7 +11,7 @@ const NavBar = () => {
         <Navbar.Collapse
           id={`offcanvasNavbar-expand-lg`}
         >
-            <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Nav className="justify-content-end text-center flex-grow-1 pe-3">
               <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
               <Nav.Link className="nav-links" href="#aboutMe">About Me</Nav.Link>
               <Nav.Link className="nav-links" href="#projects">Projects</Nav.Link>
