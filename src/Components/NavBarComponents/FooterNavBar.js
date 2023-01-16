@@ -4,7 +4,7 @@ import { Facebook, Github, Instagram, Mailbox } from 'react-bootstrap-icons';
 
 const FooterNavBar = () => {
   return (
-    <footer className='text-center text-white fixed-bottom colorForFooter'>
+    <footer className='text-center text-white sticky-lg-bottom colorForFooter'>
       <Container className='pt-3'>
         <a href="https://www.facebook.com/jrmrgldo" target="_blank"><Facebook size={30} className="mx-3" /></a>
         <a href="https://www.instagram.com/jerpyyy/" target="_blank"><Instagram size={30} className="mx-3" /></a>
