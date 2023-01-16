@@ -30,10 +30,10 @@ const ContactMeForm = () => {
           <Form.Group className="mb-3" controlId="formQuestion" >
             <Form.Label>Question</Form.Label>
             <Form.Control as="textarea" placeholder="Your Question for me" name="Question" required rows={4} />
-            <Form.Text className="text-muted">
+            <Form.Text className="text-white">
               It can be anything, ranging from "How are you today", to anything political I guess LOL.
             </Form.Text>
-            <Alert variant="primary">
+            <Alert variant="primary mt-4">
               <Alert.Heading>Just a quick reminder!</Alert.Heading>
               <p>
                 Just don't be a weirdo XD LMAO

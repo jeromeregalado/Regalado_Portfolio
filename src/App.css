@@ -231,3 +231,7 @@ Navbar .nav-links:active {
   min-height: fit-content;
   margin: 1rem 1rem;
 }
+
+.linkFormat{
+  color: white;
+}
