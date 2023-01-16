@@ -1,15 +1,15 @@
-import React, {useState} from "react";
-import { Navbar, Offcanvas, Nav, Container } from "react-bootstrap";
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 
 const NavBar = () => {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark" expand="lg" id="navbar-target" collapseOnSelect>
+    <Navbar fixed="top" bg="dark" variant="dark" expand="lg" id="navbar-target" collapseOnSelectgit >
       <Container fluid>
         <Navbar.Brand href="#home">Jerome Regalado</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse
-          id={`offcanvasNavbar-expand-sm`}
+          id={`offcanvasNavbar-expand-lg`}
         >
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
