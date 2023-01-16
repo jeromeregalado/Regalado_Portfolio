@@ -14,7 +14,7 @@ const Projects = () => {
   const renderProjectCard = (card, index) => {
     return (
       <Col xs lg="3">
-        <Card style={{ width: '30rem' }} className='projCardFormat textFormatForCard bg-white box2'>
+        <Card style={{ width: '28rem' }} className='projCardFormat textFormatForCard bg-white box2'>
           <a href={card.link} target="_blank" rel="noreferrer" className='center m-auto'><Card.Img variant="top" src={card.image} className="projImg" /></a>
           <Card.Body className='text-center'>
             <Card.Title>{card.title}</Card.Title>

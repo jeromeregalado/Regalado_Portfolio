@@ -8,9 +8,7 @@ const NavBar = () => {
       <Container fluid>
         <Navbar.Brand href="#home">Jerome Regalado</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-        <Navbar.Collapse
-          id={`offcanvasNavbar-expand-lg`}
-        >
+        <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end text-center flex-grow-1 pe-3">
               <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
               <Nav.Link className="nav-links" href="#aboutMe">About Me</Nav.Link>
