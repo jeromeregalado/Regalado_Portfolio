@@ -30,7 +30,6 @@ const EducationalBackground = () => {
 const AccordionAboutMe = () => {
   return (
     <div className="section paddingForContact">
-      <h1 className="navBarCenterText aboutMePadding">About Me</h1>
       <Container fluid>
         <Accordion defaultActiveKey="0" >
 

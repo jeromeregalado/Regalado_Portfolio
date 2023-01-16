@@ -11,7 +11,7 @@ import FooterNavBar from './Components/NavBarComponents/FooterNavBar';
 function App() 
 {
   return (
-    <div className="App">
+    <div className="App" >
 
         <NavBar/>
 
