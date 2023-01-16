@@ -4,6 +4,7 @@ import softvisionImage from ".././Images/softvisionImage.png"
 
 const MainCarousel = () => {
   return (
+    <div>
     <Carousel>
       <Carousel.Item interval={4000}>
         <img
@@ -42,6 +43,7 @@ const MainCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   )
 }
 

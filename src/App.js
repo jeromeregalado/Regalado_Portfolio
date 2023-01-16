@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, {useRef} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MainCarousel from './Components/MainCarousel';
 import NavBar from './Components/NavBarComponents/NavBar';

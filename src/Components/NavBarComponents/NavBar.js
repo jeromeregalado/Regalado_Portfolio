@@ -1,5 +1,5 @@
-import { getValue } from "@testing-library/user-event/dist/utils";
-import React from "react";
+
+import {React, useState} from "react";
 import { Navbar, Offcanvas, Nav, Container } from "react-bootstrap";
 
 const NavBar = () => {
@@ -21,7 +21,7 @@ const NavBar = () => {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
-              <Nav.Link className="nav-links" href="#aboutMe" >About Me</Nav.Link>
+              <Nav.Link className="nav-links" href="#aboutMe">About Me</Nav.Link>
               <Nav.Link className="nav-links" href="#projects">Projects</Nav.Link>
               <Nav.Link className="nav-links" href="#contactMe">Contact Me</Nav.Link>
             </Nav>
