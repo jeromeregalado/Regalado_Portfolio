@@ -204,6 +204,13 @@ section {
   flex-direction: row;
 }
 
+.grid2>div {
+  -ms-flex-align: center;
+  flex-basis: content;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
 .paddingEmail {
   padding-right: 2rem;
 }
@@ -219,7 +226,7 @@ section {
   background-color: white;
 }
 
-Navbar .nav-links:active {
+.nav-links:active {
   background-color: blue;
   /*will change background-color of element on hover */
   color: white;
@@ -228,8 +235,8 @@ Navbar .nav-links:active {
 
 .projCardFormat {
   min-width: auto;
-  min-height: fit-content;
-  margin: 1rem 1rem;
+  min-height:auto;
+  gap: 1rem;
 }
 
 .linkFormat{
