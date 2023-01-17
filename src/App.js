@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MainCarousel from './Components/MainCarousel';
 import NavBar from './Components/NavBarComponents/NavBar';
@@ -11,7 +11,7 @@ import FooterNavBar from './Components/NavBarComponents/FooterNavBar';
 function App() 
 {
   return (
-    <div className="App" >
+    <div className="App">
 
         <NavBar/>
 
