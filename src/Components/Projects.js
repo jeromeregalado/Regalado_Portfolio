@@ -17,7 +17,7 @@ const Projects = () => {
         <Card style={{ width: '23rem' }} className='projCardFormat textFormatForCard bg-white box2'>
           <a href={card.link} target="_blank" rel="noreferrer" className='center m-auto'><Card.Img variant="top" src={card.image} className="projImg" /></a>
           <Card.Body className='text-center'>
-            <Card.Title>{card.title} hotdog</Card.Title>
+            <Card.Title>{card.title}</Card.Title>
             <Card.Text>
               {card.desc}
             </Card.Text>
