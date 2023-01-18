@@ -149,7 +149,7 @@ section {
 }
 
 .box {
-  margin: 1rem;
+  margin: 0;
   min-height: 33%;
   max-height: 33%;
   min-width: 33%;
@@ -162,6 +162,7 @@ section {
   max-height: fit-content;
   min-width: 33%;
   max-width: 100%;
+  justify-content: center;
 }
 
 .grid {
@@ -235,8 +236,7 @@ section {
 
 .projCardFormat {
   min-width: auto;
-  min-height:auto;
-  gap: 1rem;
+  min-height: 550px;
 }
 
 .linkFormat{
